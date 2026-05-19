@@ -1,0 +1,395 @@
+/**
+ * ============================================
+ * DESIGN TOKENS - SkillSwap Design System
+ * ============================================
+ * 
+ * Principles:
+ * 1. Modular Typography Scale - Golden Ratio (1.618) + Perfect Fourth (1.333)
+ * 2. 8px Grid System - All spacing is a multiple of 8
+ * 3. 60:30:10 Color Rule - Balanced color hierarchy
+ * 4. Harmonious Ratios - Golden Ratio, Perfect Fourth, Major Third
+ * 5. Claymorphism + Glassmorphism - Modern tactile UI
+ */
+
+/* ============================================
+   TYPOGRAPHY SCALE - Modular Scale
+   Base: 16px
+   Ratios: Golden Ratio (1.618), Perfect Fourth (1.333)
+   ============================================ */
+:root {
+  /* Base font size */
+  --font-size-base: 16px;
+  
+  /* Typography Scale using Perfect Fourth (1.333) and Golden Ratio (1.618) */
+  /* Text sizes - Minor Third (1.2) for fine grain */
+  --text-3xs: 0.625rem;   /* 10px */
+  --text-2xs: 0.75rem;    /* 12px */
+  --text-xs: 0.875rem;    /* 14px - Caption */
+  --text-sm: 1rem;        /* 16px - Base Body */
+  --text-base: 1.125rem;  /* 18px - Lead Paragraph */
+  
+  /* Heading sizes - Major Third (1.25) to Perfect Fourth (1.333) */
+  --text-lg: 1.25rem;     /* 20px - H4 */
+  --text-xl: 1.5rem;      /* 24px - H3 (1.333 ratio) */
+  --text-2xl: 1.999rem;   /* 32px - H2 (1.333 ratio) */
+  --text-3xl: 2.665rem;   /* 42.6px - H1 (1.333 ratio) */
+  
+  /* Display sizes - Golden Ratio (1.618) for impact */
+  --text-4xl: 3.552rem;   /* 56.8px - Display Small (1.333 ratio) */
+  --text-5xl: 4.736rem;   /* 75.8px - Display Medium (1.333 ratio) */
+  --text-6xl: 6.311rem;   /* 101px - Display Large (Golden Ratio) */
+  --text-7xl: 8.415rem;   /* 134.6px - Hero (Golden Ratio) */
+  
+  /* Line Heights - Modular scale */
+  --leading-none: 1;
+  --leading-tight: 1.2;      /* Headings */
+  --leading-snug: 1.333;     /* Subheadings - Perfect Fourth */
+  --leading-normal: 1.5;     /* Body text */
+  --leading-relaxed: 1.618;  /* Golden Ratio for readability */
+  --leading-loose: 2;
+  
+  /* Letter Spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+  
+  /* Font Weights */
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+}
+
+/* ============================================
+   SPACING SCALE - 8px Grid System
+   All values are multiples of 8px
+   ============================================ */
+:root {
+  /* Base unit */
+  --space-unit: 8px;
+  
+  /* Spacing Scale */
+  --space-0: 0;
+  --space-1: 4px;      /* Half unit - micro adjustments */
+  --space-2: 8px;      /* 1x - Tight */
+  --space-3: 12px;     /* 1.5x - Compact */
+  --space-4: 16px;     /* 2x - Default */
+  --space-5: 20px;     /* 2.5x - Comfortable */
+  --space-6: 24px;     /* 3x - Relaxed */
+  --space-7: 28px;     /* 3.5x */
+  --space-8: 32px;     /* 4x - Section padding */
+  --space-9: 36px;     /* 4.5x */
+  --space-10: 40px;    /* 5x */
+  --space-12: 48px;    /* 6x - Large gaps */
+  --space-14: 56px;    /* 7x */
+  --space-16: 64px;    /* 8x - Section gaps */
+  --space-20: 80px;    /* 10x - Major sections */
+  --space-24: 96px;    /* 12x - Hero spacing */
+  --space-28: 112px;   /* 14x */
+  --space-32: 128px;   /* 16x - Page sections */
+  
+  /* Golden Ratio spacing for harmonious layouts */
+  --space-golden-sm: 13px;   /* 8 * 1.618 ≈ 13 */
+  --space-golden-md: 21px;   /* 13 * 1.618 ≈ 21 */
+  --space-golden-lg: 34px;   /* 21 * 1.618 ≈ 34 */
+  --space-golden-xl: 55px;   /* 34 * 1.618 ≈ 55 */
+}
+
+/* ============================================
+   RADIUS SCALE - Uniform Shapes
+   Based on 8px grid with purposeful progression
+   ============================================ */
+:root {
+  /* Border Radius Scale */
+  --radius-none: 0;
+  --radius-2xs: 2px;      /* Micro rounded */
+  --radius-xs: 4px;       /* Small elements */
+  --radius-sm: 8px;         /* Base - 8px */
+  --radius-md: 12px;      /* Cards, inputs */
+  --radius-lg: 16px;      /* Modals, panels */
+  --radius-xl: 24px;      /* Large cards */
+  --radius-2xl: 32px;     /* Feature cards */
+  --radius-3xl: 48px;     /* Hero sections */
+  --radius-full: 9999px;  /* Pills, circles */
+  
+  /* Claymorphism radius - softer, organic feel */
+  --radius-clay-sm: 20px;
+  --radius-clay-md: 28px;
+  --radius-clay-lg: 40px;
+}
+
+/* ============================================
+   LAYOUT RATIOS - Golden Ratio & Musical Scales
+   For proper alignment and aesthetic harmony
+   ============================================ */
+:root {
+  /* Aspect Ratios */
+  --ratio-golden: 1.618;      /* Golden Ratio φ */
+  --ratio-golden-inv: 0.618;  /* Inverse Golden Ratio */
+  
+  /* Musical Scale Ratios */
+  --ratio-octave: 2;          /* 2:1 */
+  --ratio-major-seventh: 1.875;
+  --ratio-minor-seventh: 1.778;
+  --ratio-major-sixth: 1.667;
+  --ratio-minor-sixth: 1.6;
+  --ratio-perfect-fifth: 1.5;
+  --ratio-perfect-fourth: 1.333;
+  --ratio-major-third: 1.25;
+  --ratio-minor-third: 1.2;
+  --ratio-major-second: 1.125;
+  --ratio-minor-second: 1.067;
+  
+  /* Grid Column Widths using Golden Ratio */
+  --col-golden-sm: calc(100% / var(--ratio-golden));
+  --col-golden-lg: calc(100% - var(--col-golden-sm));
+  
+  /* Standard container widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  /* Content max widths using Perfect Fourth */
+  --content-narrow: 45ch;   /* ~45 characters */
+  --content-default: 65ch;  /* Optimal reading width */
+  --content-wide: 75ch;     /* ~75 characters */
+}
+
+/* ============================================
+   COLOR SYSTEM - 60:30:10 Rule
+   
+   60% - Primary/Background (Dominant)
+   30% - Secondary (Supporting)
+   10% - Accent (Action/Highlight)
+   ============================================ */
+:root {
+  /* ============================================
+     PRIMARY PALETTE - 60% Dominant
+     ============================================ */
+  /* Light Mode - Ivory/Cream background */
+  --color-primary-60: #F8F6F3;      /* Background - 60% */
+  --color-primary-60-elevated: #FFFFFF;
+  --color-primary-60-sunken: #EDE9E4;
+  
+  /* Dark Mode - Deep charcoal */
+  --color-primary-60-dark: #0F1114;
+  --color-primary-60-dark-elevated: #1A1D21;
+  --color-primary-60-dark-sunken: #0A0C0E;
+  
+  /* ============================================
+     SECONDARY PALETTE - 30% Supporting
+     ============================================ */
+  /* Light Mode - Soft Sage */
+  --color-secondary-30: #E8ECE4;
+  --color-secondary-30-hover: #DDE3D7;
+  --color-secondary-30-active: #D2DAC9;
+  
+  /* Dark Mode - Muted slate */
+  --color-secondary-30-dark: #252A30;
+  --color-secondary-30-dark-hover: #2E343C;
+  --color-secondary-30-dark-active: #373E47;
+  
+  /* ============================================
+     ACCENT PALETTE - 10% Highlight
+     ============================================ */
+  /* Primary Accent - Olive Green */
+  --color-accent-10: #6B8E5A;
+  --color-accent-10-hover: #5A7A4A;
+  --color-accent-10-active: #4A6640;
+  --color-accent-10-subtle: rgba(107, 142, 90, 0.1);
+  --color-accent-10-glow: rgba(107, 142, 90, 0.4);
+  
+  /* Secondary Accent - Terracotta */
+  --color-accent-2: #C9A87C;
+  --color-accent-2-hover: #B8966A;
+  
+  /* Tertiary Accent - Deep Blue */
+  --color-accent-3: #5A7A8A;
+  --color-accent-3-hover: #4A6A7A;
+  
+  /* ============================================
+     SEMANTIC COLORS
+     ============================================ */
+  --color-success: #4CAF50;
+  --color-success-subtle: rgba(76, 175, 80, 0.1);
+  --color-warning: #FF9800;
+  --color-warning-subtle: rgba(255, 152, 0, 0.1);
+  --color-error: #F44336;
+  --color-error-subtle: rgba(244, 67, 54, 0.1);
+  --color-info: #2196F3;
+  --color-info-subtle: rgba(33, 150, 243, 0.1);
+  
+  /* ============================================
+     TEXT COLORS
+     ============================================ */
+  /* Light Mode */
+  --color-text-primary: #1A1D21;
+  --color-text-secondary: #4A5059;
+  --color-text-tertiary: #6E7681;
+  --color-text-disabled: #A0A7B0;
+  --color-text-inverse: #F8F6F3;
+  
+  /* Dark Mode */
+  --color-text-primary-dark: #F8F6F3;
+  --color-text-secondary-dark: #C5C9D0;
+  --color-text-tertiary-dark: #9AA2AD;
+  --color-text-disabled-dark: #5A626D;
+  --color-text-inverse-dark: #1A1D21;
+  
+  /* ============================================
+     BORDER COLORS
+     ============================================ */
+  --color-border-subtle: rgba(0, 0, 0, 0.08);
+  --color-border-default: rgba(0, 0, 0, 0.12);
+  --color-border-strong: rgba(0, 0, 0, 0.2);
+  
+  --color-border-subtle-dark: rgba(255, 255, 255, 0.08);
+  --color-border-default-dark: rgba(255, 255, 255, 0.12);
+  --color-border-strong-dark: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   SHADOWS & ELEVATION
+   ============================================ */
+:root {
+  /* Standard Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08), 0 4px 6px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.12);
+  
+  /* Claymorphism Shadows - Soft, 3D tactile feel */
+  --shadow-clay-xs: 
+    8px 8px 16px rgba(166, 163, 159, 0.6),
+    -8px -8px 16px rgba(255, 255, 255, 0.8),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.5);
+  
+  --shadow-clay-sm: 
+    12px 12px 24px rgba(166, 163, 159, 0.5),
+    -12px -12px 24px rgba(255, 255, 255, 0.7),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 2px rgba(166, 163, 159, 0.2);
+  
+  --shadow-clay-md: 
+    16px 16px 32px rgba(166, 163, 159, 0.5),
+    -16px -16px 32px rgba(255, 255, 255, 0.7),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(166, 163, 159, 0.2);
+  
+  --shadow-clay-lg: 
+    24px 24px 48px rgba(166, 163, 159, 0.5),
+    -24px -24px 48px rgba(255, 255, 255, 0.7),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(166, 163, 159, 0.2);
+  
+  /* Dark Mode Claymorphism */
+  --shadow-clay-dark-xs: 
+    8px 8px 16px rgba(0, 0, 0, 0.6),
+    -8px -8px 16px rgba(60, 65, 72, 0.4),
+    inset 1px 1px 2px rgba(60, 65, 72, 0.5);
+  
+  --shadow-clay-dark-sm: 
+    12px 12px 24px rgba(0, 0, 0, 0.5),
+    -12px -12px 24px rgba(60, 65, 72, 0.4),
+    inset 2px 2px 4px rgba(60, 65, 72, 0.5);
+  
+  /* Glow Shadows */
+  --shadow-glow-accent: 0 0 20px var(--color-accent-10-glow);
+  --shadow-glow-lg: 0 0 40px rgba(107, 142, 90, 0.3);
+  
+  /* Inner Shadows */
+  --shadow-inner-sm: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-inner-md: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================
+   GLASSMORPHISM
+   ============================================ */
+:root {
+  /* Glass Backgrounds */
+  --glass-bg-light: rgba(255, 255, 255, 0.7);
+  --glass-bg-light-subtle: rgba(255, 255, 255, 0.4);
+  --glass-bg-dark: rgba(26, 29, 33, 0.7);
+  --glass-bg-dark-subtle: rgba(26, 29, 33, 0.4);
+  
+  /* Glass Borders */
+  --glass-border-light: rgba(255, 255, 255, 0.5);
+  --glass-border-light-subtle: rgba(255, 255, 255, 0.2);
+  --glass-border-dark: rgba(255, 255, 255, 0.1);
+  --glass-border-dark-subtle: rgba(255, 255, 255, 0.05);
+  
+  /* Glass Blur */
+  --glass-blur-xs: blur(4px);
+  --glass-blur-sm: blur(8px);
+  --glass-blur-md: blur(12px);
+  --glass-blur-lg: blur(20px);
+  --glass-blur-xl: blur(32px);
+  
+  /* Glass Shadows */
+  --shadow-glass: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  
+  --shadow-glass-dark: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   TRANSITIONS & ANIMATION
+   ============================================ */
+:root {
+  /* Durations */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 350ms;
+  --duration-slower: 500ms;
+  
+  /* Easing Functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Common Transitions */
+  --transition-fast: var(--duration-fast) var(--ease-in-out);
+  --transition-base: var(--duration-base) var(--ease-in-out);
+  --transition-slow: var(--duration-slow) var(--ease-in-out);
+  --transition-spring: var(--duration-base) var(--ease-spring);
+  
+  /* Transform transitions */
+  --transition-transform: transform var(--transition-fast);
+  --transition-all: all var(--transition-base);
+  --transition-colors: background-color, border-color, color, fill, stroke var(--transition-fast);
+}
+
+/* ============================================
+   Z-INDEX SCALE
+   ============================================ */
+:root {
+  --z-negative: -1;
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-toast: 800;
+}

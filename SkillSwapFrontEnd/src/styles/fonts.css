@@ -1,0 +1,29 @@
+/* ============================================
+ * FONT SYSTEM - SkillSwap
+ * ============================================
+ * Primary Display: Space Grotesk (distinctive, modern)
+ * Body/Text: Inter (highly legible)
+ * Accent/Mono: JetBrains Mono (for code/technical elements)
+ */
+
+/* Font loading with display=swap to prevent FOIT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Font fallbacks for performance */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 5%;
+  size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'Space Grotesk Fallback';
+  src: local('Arial');
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 5%;
+  size-adjust: 105%;
+}

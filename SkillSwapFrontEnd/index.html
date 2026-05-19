@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Preconnect to Google Fonts for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8J7wImBzC8ksrKDX9w.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" as="font" type="font/woff2" crossorigin />
+  
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <title>Skill Swap</title>
+  
+  <!-- Separator/Divider Styles - Inline for immediate availability -->
+  <style>
+    /* Standard horizontal divider */
+    .divider { 
+      height: 2px; 
+      width: 100%; 
+      background-color: #2A2A2D; 
+      margin: 1.5rem 0; 
+      border-radius: 1px;
+      opacity: 0.8;
+    }
+    .divider-gradient {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #8fa160, #a8b97d, #8fa160, transparent);
+      margin: 1.5rem 0;
+      border-radius: 1px;
+      opacity: 0.7;
+    }
+    .divider-compact {
+      height: 1px;
+      width: 100%;
+      background-color: #2A2A2D;
+      margin: 0.75rem 0;
+      opacity: 0.6;
+    }
+    .divider-vertical {
+      width: 2px;
+      height: 100%;
+      min-height: 2rem;
+      background-color: #2A2A2D;
+      margin: 0 1.5rem;
+      border-radius: 1px;
+      opacity: 0.6;
+    }
+    .nav-divider {
+      height: 1px;
+      background-color: #2A2A2D;
+      margin: 0.5rem 0.75rem;
+      opacity: 0.4;
+    }
+    .form-divider {
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(90deg, transparent, #2A2A2D, transparent);
+      margin: 1.5rem 0;
+      opacity: 0.6;
+    }
+  </style>
+  <meta name="description"
+    content="Skill Swap - Connect with learners and experts worldwide. Share your knowledge, learn new skills, and grow together in our vibrant community." />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

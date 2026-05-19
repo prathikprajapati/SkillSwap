@@ -1,0 +1,195 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Skip navigation links":
+    - button "Skip to main content"
+    - button "Skip to navigation"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - link "Skip to main content" [ref=e6] [cursor=pointer]:
+        - /url: "#main-content"
+      - banner [ref=e7]:
+        - generic [ref=e9]:
+          - link "SS SkillSwap" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e12]: SS
+            - generic [ref=e13]: SkillSwap
+          - navigation "Main navigation" [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - img [ref=e16]
+              - generic [ref=e19]: Home
+            - link "Browse" [ref=e20] [cursor=pointer]:
+              - /url: /browse
+              - img [ref=e21]
+              - generic [ref=e23]: Browse
+            - link "Dashboard" [ref=e24] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e25]
+              - generic [ref=e28]: Dashboard
+            - link "Exchanges" [ref=e29] [cursor=pointer]:
+              - /url: /exchanges
+              - img [ref=e30]
+              - generic [ref=e32]: Exchanges
+            - link "Messages" [ref=e33] [cursor=pointer]:
+              - /url: /messages
+              - img [ref=e34]
+              - generic [ref=e36]: Messages
+          - generic [ref=e37]:
+            - button [ref=e38]:
+              - img [ref=e39]
+            - button [ref=e42]:
+              - img [ref=e43]
+            - link "Offer Skill" [ref=e49] [cursor=pointer]:
+              - /url: /create
+              - img [ref=e50]
+              - generic [ref=e52]: Offer Skill
+            - link [ref=e53] [cursor=pointer]:
+              - /url: /messages
+              - img [ref=e54]
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e57]
+      - main [active] [ref=e60]:
+        - generic [ref=e62]:
+          - complementary [ref=e63]:
+            - generic [ref=e65]:
+              - generic [ref=e67]: C
+              - heading "chat1779113961635" [level=2] [ref=e68]
+              - paragraph [ref=e69]: chat1779113961635@example.com
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - img [ref=e72]
+                  - generic [ref=e74]: New
+                - generic [ref=e75]:
+                  - img [ref=e76]
+                  - generic [ref=e79]: 0h
+              - generic [ref=e82]:
+                - button "Toggle dark mode" [ref=e83]:
+                  - img [ref=e84]
+                - generic [ref=e90]:
+                  - button "Switch to undefined theme" [ref=e91]
+                  - button "Switch to undefined theme" [ref=e96]
+                  - button "Switch to undefined theme" [ref=e101]
+              - generic [ref=e107]:
+                - generic [ref=e108]: Requests
+                - generic [ref=e109]: 0 pending
+            - navigation [ref=e110]:
+              - list [ref=e111]:
+                - listitem [ref=e112]:
+                  - link "Feed" [ref=e113] [cursor=pointer]:
+                    - /url: /dashboard
+                    - img [ref=e114]
+                    - generic [ref=e116]: Feed
+                - listitem [ref=e117]:
+                  - link "Schedule" [ref=e118] [cursor=pointer]:
+                    - /url: /schedule
+                    - img [ref=e119]
+                    - generic [ref=e121]: Schedule
+                - listitem [ref=e122]:
+                  - link "Messages" [ref=e123] [cursor=pointer]:
+                    - /url: /messages
+                    - img [ref=e124]
+                    - generic [ref=e126]: Messages
+                - listitem [ref=e128]:
+                  - link "Profile" [ref=e129] [cursor=pointer]:
+                    - /url: /profile/me
+                    - img [ref=e130]
+                    - generic [ref=e133]: Profile
+                - listitem [ref=e134]:
+                  - link "Settings" [ref=e135] [cursor=pointer]:
+                    - /url: /settings
+                    - img [ref=e136]
+                    - generic [ref=e139]: Settings
+                - listitem [ref=e140]:
+                  - button "Sign Out" [ref=e142]:
+                    - img [ref=e143]
+                    - generic [ref=e146]: Sign Out
+          - main [ref=e147]:
+            - generic [ref=e148]:
+              - heading "Your Activity Feed" [level=1] [ref=e149]
+              - link "Offer Skill" [ref=e150] [cursor=pointer]:
+                - /url: /create
+                - img [ref=e151]
+                - text: Offer Skill
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - img [ref=e156]
+                - generic [ref=e161]: "0"
+                - generic [ref=e162]: Pending Requests
+              - generic [ref=e163]:
+                - img [ref=e164]
+                - generic [ref=e166]: "0"
+                - generic [ref=e167]: Upcoming
+              - generic [ref=e168]:
+                - img [ref=e169]
+                - generic [ref=e172]: "0"
+                - generic [ref=e173]: Hours
+              - generic [ref=e174]:
+                - img [ref=e175]
+                - generic [ref=e177]: "0"
+                - generic [ref=e178]: Reviews
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - heading "Incoming Requests" [level=2] [ref=e182]
+                - link "View All" [ref=e183] [cursor=pointer]:
+                  - /url: /requests
+              - generic [ref=e184]:
+                - paragraph [ref=e185]: No pending requests
+                - paragraph [ref=e186]: Browse skills to send match requests!
+                - link "Browse Skills" [ref=e187] [cursor=pointer]:
+                  - /url: /browse
+          - complementary [ref=e188]:
+            - generic [ref=e189]:
+              - heading "Level up!" [level=3] [ref=e190]:
+                - img [ref=e191]
+                - text: Level up!
+              - paragraph [ref=e194]: Complete 2 more hours of teaching to unlock the Platinum badge.
+              - paragraph [ref=e197]: 8 / 10 hours
+      - contentinfo [ref=e198]:
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - generic [ref=e201]:
+              - generic [ref=e202]:
+                - generic [ref=e204]: SS
+                - generic [ref=e205]: SkillSwap
+              - paragraph [ref=e206]: Connect, learn, and grow by exchanging skills with others.
+            - navigation "Platform links" [ref=e207]:
+              - heading "Platform" [level=4] [ref=e208]
+              - list [ref=e209]:
+                - listitem [ref=e210]:
+                  - link "Browse Skills" [ref=e211] [cursor=pointer]:
+                    - /url: /browse
+                - listitem [ref=e212]:
+                  - link "Offer a Skill" [ref=e213] [cursor=pointer]:
+                    - /url: /create
+                - listitem [ref=e214]:
+                  - link "Dashboard" [ref=e215] [cursor=pointer]:
+                    - /url: /dashboard
+            - navigation "Community links" [ref=e216]:
+              - heading "Community" [level=4] [ref=e217]
+              - list [ref=e218]:
+                - listitem [ref=e219]:
+                  - link "Guidelines" [ref=e220] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e221]:
+                  - link "Success Stories" [ref=e222] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e223]:
+                  - link "Blog" [ref=e224] [cursor=pointer]:
+                    - /url: "#"
+            - navigation "Support links" [ref=e225]:
+              - heading "Support" [level=4] [ref=e226]
+              - list [ref=e227]:
+                - listitem [ref=e228]:
+                  - link "Help Center" [ref=e229] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e230]:
+                  - link "Contact Us" [ref=e231] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e232]:
+                  - link "Privacy Policy" [ref=e233] [cursor=pointer]:
+                    - /url: "#"
+          - generic [ref=e234]: © 2026 SkillSwap. All rights reserved.
+```

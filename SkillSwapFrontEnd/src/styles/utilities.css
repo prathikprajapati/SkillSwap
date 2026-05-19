@@ -1,0 +1,467 @@
+/**
+ * ============================================
+ * CLAYMORPHISM & GLASSMORPHISM UTILITIES
+ * Modern tactile UI with soft 3D effects
+ * ============================================
+ */
+
+@import './design-tokens.css';
+
+/* ============================================
+   CLAYMORPHISM - Soft 3D Tactile UI
+   ============================================ */
+
+.clay {
+  background: var(--color-primary-60);
+  border-radius: var(--radius-clay-sm);
+  box-shadow: var(--shadow-clay-sm);
+  transition: all var(--transition-fast);
+}
+
+.clay-interactive {
+  cursor: pointer;
+  user-select: none;
+}
+
+.clay-interactive:hover {
+  box-shadow: var(--shadow-clay-md);
+  transform: translateY(-2px);
+}
+
+.clay-interactive:active {
+  box-shadow: var(--shadow-clay-xs);
+  transform: translateY(1px);
+}
+
+/* Claymorphism Size Variants */
+.clay-xs {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-clay-xs);
+}
+
+.clay-sm {
+  border-radius: var(--radius-clay-sm);
+  box-shadow: var(--shadow-clay-sm);
+}
+
+.clay-md {
+  border-radius: var(--radius-clay-md);
+  box-shadow: var(--shadow-clay-md);
+}
+
+.clay-lg {
+  border-radius: var(--radius-clay-lg);
+  box-shadow: var(--shadow-clay-lg);
+}
+
+/* Claymorphism with Accent Color */
+.clay-accent {
+  background: var(--color-accent-10);
+  color: white;
+  box-shadow: 
+    12px 12px 24px rgba(90, 120, 75, 0.4),
+    -12px -12px 24px rgba(130, 170, 110, 0.3),
+    inset 2px 2px 4px rgba(130, 170, 110, 0.5);
+}
+
+.clay-accent:hover {
+  background: var(--color-accent-10-hover);
+  box-shadow: 
+    16px 16px 32px rgba(90, 120, 75, 0.4),
+    -16px -16px 32px rgba(130, 170, 110, 0.3);
+}
+
+/* Inset Clay (Pressed State) */
+.clay-inset {
+  box-shadow: 
+    inset 4px 4px 8px rgba(166, 163, 159, 0.4),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Dark Mode Claymorphism */
+@media (prefers-color-scheme: dark) {
+  .clay {
+    background: var(--color-primary-60-dark-elevated);
+    box-shadow: var(--shadow-clay-dark-sm);
+  }
+  
+  .clay-inset {
+    box-shadow: 
+      inset 4px 4px 8px rgba(0, 0, 0, 0.4),
+      inset -4px -4px 8px rgba(60, 65, 72, 0.4);
+  }
+}
+
+.dark .clay {
+  background: var(--color-primary-60-dark-elevated);
+  box-shadow: var(--shadow-clay-dark-sm);
+}
+
+/* ============================================
+   GLASSMORPHISM - Frosted Glass Effect
+   ============================================ */
+
+.glass {
+  background: var(--glass-bg-light);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: 1px solid var(--glass-border-light);
+  box-shadow: var(--shadow-glass);
+}
+
+.glass-subtle {
+  background: var(--glass-bg-light-subtle);
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border-light-subtle);
+}
+
+.glass-strong {
+  background: var(--glass-bg-light);
+  backdrop-filter: var(--glass-blur-lg);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+}
+
+/* Glass Blur Variants */
+.glass-blur-xs {
+  backdrop-filter: var(--glass-blur-xs);
+  -webkit-backdrop-filter: var(--glass-blur-xs);
+}
+
+.glass-blur-sm {
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+}
+
+.glass-blur-md {
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+}
+
+.glass-blur-lg {
+  backdrop-filter: var(--glass-blur-lg);
+  -webkit-backdrop-filter: var(--glass-blur-lg);
+}
+
+.glass-blur-xl {
+  backdrop-filter: var(--glass-blur-xl);
+  -webkit-backdrop-filter: var(--glass-blur-xl);
+}
+
+/* Dark Mode Glass */
+@media (prefers-color-scheme: dark) {
+  .glass {
+    background: var(--glass-bg-dark);
+    border-color: var(--glass-border-dark);
+    box-shadow: var(--shadow-glass-dark);
+  }
+  
+  .glass-subtle {
+    background: var(--glass-bg-dark-subtle);
+    border-color: var(--glass-border-dark-subtle);
+  }
+}
+
+.dark .glass {
+  background: var(--glass-bg-dark);
+  border-color: var(--glass-border-dark);
+  box-shadow: var(--shadow-glass-dark);
+}
+
+.dark .glass-subtle {
+  background: var(--glass-bg-dark-subtle);
+  border-color: var(--glass-border-dark-subtle);
+}
+
+/* ============================================
+   COMBINED CLAY + GLASS MORPHISM
+   Best of both worlds
+   ============================================ */
+
+.clay-glass {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  border-radius: var(--radius-clay-sm);
+  box-shadow: 
+    12px 12px 24px rgba(166, 163, 159, 0.4),
+    -12px -12px 24px rgba(255, 255, 255, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--glass-border-light);
+}
+
+.clay-glass-dark {
+  background: linear-gradient(
+    145deg,
+    rgba(40, 45, 51, 0.9) 0%,
+    rgba(26, 29, 33, 0.7) 100%
+  );
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  border-radius: var(--radius-clay-sm);
+  box-shadow: 
+    12px 12px 24px rgba(0, 0, 0, 0.4),
+    -12px -12px 24px rgba(60, 65, 72, 0.4),
+    inset 1px 1px 2px rgba(60, 65, 72, 0.5);
+  border: 1px solid var(--glass-border-dark);
+}
+
+/* ============================================
+   TYPOGRAPHY UTILITIES - Modular Scale
+   ============================================ */
+
+.text-display-lg { font-size: var(--text-5xl); line-height: var(--leading-none); }
+.text-display { font-size: var(--text-4xl); line-height: var(--leading-tight); }
+.text-display-sm { font-size: var(--text-3xl); line-height: var(--leading-tight); }
+
+.text-h1 { font-size: var(--text-3xl); line-height: var(--leading-tight); font-weight: var(--font-semibold); }
+.text-h2 { font-size: var(--text-2xl); line-height: var(--leading-tight); font-weight: var(--font-semibold); }
+.text-h3 { font-size: var(--text-xl); line-height: var(--leading-snug); font-weight: var(--font-semibold); }
+.text-h4 { font-size: var(--text-lg); line-height: var(--leading-snug); font-weight: var(--font-semibold); }
+
+.text-body-lg { font-size: var(--text-base); line-height: var(--leading-relaxed); }
+.text-body { font-size: var(--text-sm); line-height: var(--leading-normal); }
+.text-body-sm { font-size: var(--text-xs); line-height: var(--leading-normal); }
+
+.text-caption { font-size: var(--text-2xs); line-height: var(--leading-normal); letter-spacing: var(--tracking-wide); }
+.text-micro { font-size: var(--text-3xs); line-height: var(--leading-normal); letter-spacing: var(--tracking-wider); }
+
+/* ============================================
+   SPACING UTILITIES - 8px Grid
+   ============================================ */
+
+/* Gap utilities */
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.gap-5 { gap: var(--space-5); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+.gap-10 { gap: var(--space-10); }
+.gap-12 { gap: var(--space-12); }
+.gap-16 { gap: var(--space-16); }
+.gap-20 { gap: var(--space-20); }
+.gap-24 { gap: var(--space-24); }
+.gap-golden { gap: var(--space-golden-md); }
+
+/* Padding utilities */
+.p-1 { padding: var(--space-1); }
+.p-2 { padding: var(--space-2); }
+.p-3 { padding: var(--space-3); }
+.p-4 { padding: var(--space-4); }
+.p-5 { padding: var(--space-5); }
+.p-6 { padding: var(--space-6); }
+.p-8 { padding: var(--space-8); }
+.p-10 { padding: var(--space-10); }
+.p-12 { padding: var(--space-12); }
+.p-16 { padding: var(--space-16); }
+.p-20 { padding: var(--space-20); }
+
+/* Margin utilities */
+.m-1 { margin: var(--space-1); }
+.m-2 { margin: var(--space-2); }
+.m-3 { margin: var(--space-3); }
+.m-4 { margin: var(--space-4); }
+.m-5 { margin: var(--space-5); }
+.m-6 { margin: var(--space-6); }
+.m-8 { margin: var(--space-8); }
+.m-10 { margin: var(--space-10); }
+.m-12 { margin: var(--space-12); }
+.m-16 { margin: var(--space-16); }
+.m-20 { margin: var(--space-20); }
+
+/* ============================================
+   RADIUS UTILITIES - Uniform Shapes
+   ============================================ */
+
+.rounded-8 { border-radius: var(--radius-sm); }
+.rounded-12 { border-radius: var(--radius-md); }
+.rounded-16 { border-radius: var(--radius-lg); }
+.rounded-24 { border-radius: var(--radius-xl); }
+.rounded-32 { border-radius: var(--radius-2xl); }
+.rounded-48 { border-radius: var(--radius-3xl); }
+.rounded-clay-sm { border-radius: var(--radius-clay-sm); }
+.rounded-clay-md { border-radius: var(--radius-clay-md); }
+.rounded-clay-lg { border-radius: var(--radius-clay-lg); }
+
+/* ============================================
+   LAYOUT UTILITIES - Golden Ratio & Grid
+   ============================================ */
+
+.ratio-golden { aspect-ratio: var(--ratio-golden); }
+.ratio-golden-inv { aspect-ratio: var(--ratio-golden-inv); }
+.ratio-perfect-fourth { aspect-ratio: var(--ratio-perfect-fourth); }
+.ratio-perfect-fifth { aspect-ratio: var(--ratio-perfect-fifth); }
+.ratio-octave { aspect-ratio: var(--ratio-octave); }
+
+/* Container widths */
+.container-narrow { max-width: var(--content-narrow); }
+.container-default { max-width: var(--content-default); }
+.container-wide { max-width: var(--content-wide); }
+
+/* ============================================
+   EFFECT UTILITIES
+   ============================================ */
+
+/* Glow effects */
+.glow-accent { box-shadow: var(--shadow-glow-accent); }
+.glow-lg { box-shadow: var(--shadow-glow-lg); }
+
+/* Smooth transitions */
+.transition-smooth { transition: var(--transition-all); }
+.transition-spring { transition: var(--transition-spring); }
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Focus ring */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent-10-glow);
+}
+
+/* ============================================
+   COLOR UTILITIES - 60:30:10 Rule
+   ============================================ */
+
+/* Background colors */
+.bg-primary-60 { background-color: var(--color-primary-60); }
+.bg-secondary-30 { background-color: var(--color-secondary-30); }
+.bg-accent-10 { background-color: var(--color-accent-10); }
+
+/* Text colors */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-tertiary { color: var(--color-text-tertiary); }
+
+/* ============================================
+   UTILITY CLASSES FOR COMMON PATTERNS
+   ============================================ */
+
+/* Card pattern */
+.card {
+  background: var(--color-primary-60-elevated);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-clay {
+  background: var(--color-primary-60);
+  border-radius: var(--radius-clay-sm);
+  box-shadow: var(--shadow-clay-sm);
+  transition: all var(--transition-fast);
+  padding: var(--space-6);
+}
+
+.card-glass {
+  background: var(--glass-bg-light);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: 1px solid var(--glass-border-light);
+  box-shadow: var(--shadow-glass);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+}
+
+/* Button patterns */
+.btn-clay {
+  background: var(--color-primary-60);
+  border-radius: var(--radius-clay-sm);
+  box-shadow: var(--shadow-clay-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  user-select: none;
+  padding: var(--space-3) var(--space-6);
+  font-weight: var(--font-medium);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.btn-clay:hover {
+  box-shadow: var(--shadow-clay-md);
+  transform: translateY(-2px);
+}
+
+.btn-clay:active {
+  box-shadow: var(--shadow-clay-xs);
+  transform: translateY(1px);
+}
+
+.btn-glass {
+  background: var(--glass-bg-light);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: 1px solid var(--glass-border-light);
+  box-shadow: var(--shadow-glass);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-medium);
+  transition: all var(--transition-fast);
+}
+
+.btn-glass:hover {
+  background: var(--glass-bg-light);
+  box-shadow: var(--shadow-md);
+}
+
+/* Input patterns */
+.input-clay {
+  background: var(--color-primary-60);
+  border-radius: var(--radius-xs);
+  box-shadow: var(--shadow-clay-xs);
+  padding: var(--space-3) var(--space-4);
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: var(--text-sm);
+}
+
+.input-clay:focus {
+  box-shadow: 
+    inset 2px 2px 4px rgba(166, 163, 159, 0.4),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.8),
+    0 0 0 3px var(--color-accent-10-glow);
+}
+
+/* Navigation patterns */
+.nav-glass {
+  background: var(--glass-bg-light);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: 1px solid var(--glass-border-light);
+  box-shadow: var(--shadow-glass);
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0;
+  border-bottom: 1px solid var(--glass-border-light);
+}
+
+/* Section patterns */
+.section-padded {
+  padding: var(--space-20) var(--space-6);
+}
+
+.section-narrow {
+  max-width: var(--content-default);
+  margin-left: auto;
+  margin-right: auto;
+}

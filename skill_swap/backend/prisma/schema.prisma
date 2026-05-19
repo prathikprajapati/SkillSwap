@@ -1,0 +1,317 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String   @id @default(uuid())
+  firebase_uid      String?  @unique
+  email             String   @unique
+  password_hash     String?
+  name              String
+  avatar            String?
+  profile_completion Int     @default(0)
+  xp                Int      @default(0)
+  is_verified       Boolean  @default(false)
+  is_deleted        Boolean  @default(false)
+  deleted_at        DateTime?
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+
+  // Relations
+  user_skills       UserSkill[]
+  sent_requests     MatchRequest[] @relation("SentRequests")
+  received_requests MatchRequest[] @relation("ReceivedRequests")
+  user1_matches     Match[] @relation("User1Matches")
+  user2_matches     Match[] @relation("User2Matches")
+  sent_messages     Message[] @relation("SentMessages")
+  xp_transactions   XPTransaction[]
+  streak            Streak?
+  sessions_as_teacher Session[] @relation("TeacherSessions")
+  sessions_as_learner Session[] @relation("LearnerSessions")
+  ratings_received  Rating[] @relation("RatedUser")
+  ratings_given     Rating[] @relation("RaterUser")
+  achievements      Achievement[]
+  notifications     Notification[]
+
+  @@index([created_at])
+  @@index([is_deleted])
+  @@map("users")
+}
+
+model Skill {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  category    String?
+  created_at  DateTime @default(now())
+
+  // Relations
+  user_skills UserSkill[]
+  sessions    Session[] @relation("SkillSessions")
+
+  @@map("skills")
+}
+
+model UserSkill {
+  id              String   @id @default(uuid())
+  user_id         String
+  skill_id        String
+  skill_type      SkillType
+  proficiency_level ProficiencyLevel @default(beginner)
+  created_at      DateTime @default(now())
+
+  // Relations
+  user  User  @relation(fields: [user_id], references: [id], onDelete: Cascade, map: "UserSkill_user_fkey")
+  skill Skill @relation(fields: [skill_id], references: [id], onDelete: Cascade, map: "UserSkill_skill_fkey")
+
+  @@unique([user_id, skill_id, skill_type])
+  @@map("user_skills")
+}
+
+model MatchRequest {
+  id            String   @id @default(uuid())
+  sender_id     String
+  receiver_id   String
+  skill_offered_id String?  // Skill the sender is offering
+  skill_wanted_id  String?  // Skill the sender wants to learn
+  status        RequestStatus @default(pending)
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  // Relations
+  sender   User @relation("SentRequests", fields: [sender_id], references: [id], onDelete: Cascade)
+  receiver User @relation("ReceivedRequests", fields: [receiver_id], references: [id], onDelete: Cascade)
+
+  @@unique([sender_id, receiver_id])
+  @@index([receiver_id])
+  @@map("match_requests")
+}
+
+model Match {
+  id         String   @id @default(uuid())
+  user1_id   String
+  user2_id   String
+  status     MatchStatus @default(active)
+  created_at DateTime @default(now())
+
+  // Relations
+  user1 User @relation("User1Matches", fields: [user1_id], references: [id], onDelete: Cascade)
+  user2 User @relation("User2Matches", fields: [user2_id], references: [id], onDelete: Cascade)
+  messages Message[]
+  ratings  Rating[]
+  exchanges Exchange[]
+
+  @@unique([user1_id, user2_id])
+  @@index([user2_id])
+  @@index([status])
+  @@index([created_at])
+  @@map("matches")
+}
+
+// Exchange model - tracks individual skill exchanges between matched users
+model Exchange {
+  id              String   @id @default(uuid())
+  match_id        String
+  teacher_id      String   // User offering the skill
+  learner_id      String   // User learning the skill
+  skill_id        String   // The specific skill being exchanged
+  skill_name      String   // Denormalized for display
+  status          ExchangeStatus @default(pending)
+  created_at      DateTime @default(now())
+  completed_at    DateTime?
+
+  // Relations
+  match  Match @relation(fields: [match_id], references: [id], onDelete: Cascade)
+
+  @@index([match_id])
+  @@index([teacher_id])
+  @@index([learner_id])
+  @@index([status])
+  @@map("exchanges")
+}
+
+model Message {
+  id         String   @id @default(uuid())
+  match_id   String
+  sender_id  String
+  content    String
+  is_read    Boolean  @default(false)
+  created_at DateTime @default(now())
+
+  // Relations
+  match  Match @relation(fields: [match_id], references: [id], onDelete: Cascade)
+  sender User  @relation("SentMessages", fields: [sender_id], references: [id], onDelete: Cascade)
+
+  @@index([match_id, created_at])
+  @@index([sender_id])
+  @@map("messages")
+}
+
+model Streak {
+  id                String   @id @default(uuid())
+  user_id           String   @unique
+  current_streak    Int      @default(0)
+  longest_streak    Int      @default(0)
+  last_active_date  DateTime @default(now())
+
+  // Relations
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("streaks")
+}
+
+model XPTransaction {
+  id          String   @id @default(uuid())
+  user_id     String
+  amount      Int
+  action      String
+  description String?
+  created_at  DateTime @default(now())
+
+  // Relations
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("xp_transactions")
+}
+
+model Session {
+  id          String   @id @default(uuid())
+  teacher_id  String
+  learner_id  String
+  skill_id    String?
+  status      SessionStatus @default(scheduled)
+  scheduled_at DateTime?
+  completed_at DateTime?
+  created_at  DateTime @default(now())
+
+  // Relations
+  teacher User @relation("TeacherSessions", fields: [teacher_id], references: [id], onDelete: Cascade)
+  learner User @relation("LearnerSessions", fields: [learner_id], references: [id], onDelete: Cascade)
+  skill   Skill? @relation("SkillSessions", fields: [skill_id], references: [id])
+
+  @@map("sessions")
+}
+
+model Rating {
+  id          String   @id @default(uuid())
+  rated_user_id String
+  rater_user_id String
+  match_id    String?
+  rating      Int
+  comment     String?
+  created_at  DateTime @default(now())
+
+  // Relations
+  ratedUser User @relation("RatedUser", fields: [rated_user_id], references: [id], onDelete: Cascade)
+  raterUser User @relation("RaterUser", fields: [rater_user_id], references: [id], onDelete: Cascade)
+  match     Match? @relation(fields: [match_id], references: [id], onDelete: SetNull)
+
+  @@unique([rated_user_id, rater_user_id, match_id])
+  @@index([rated_user_id])
+  @@map("ratings")
+}
+
+model Achievement {
+  id          String   @id @default(uuid())
+  user_id     String
+  type        AchievementType
+  title       String
+  description String?
+  unlocked_at DateTime @default(now())
+
+  // Relations
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, type])
+  @@index([user_id])
+  @@map("achievements")
+}
+
+model Notification {
+  id          String   @id @default(uuid())
+  user_id     String
+  type        NotificationType
+  title       String
+  message     String
+  data        Json?
+  is_read     Boolean  @default(false)
+  created_at  DateTime @default(now())
+
+  // Relations
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, is_read])
+  @@index([created_at])
+  @@map("notifications")
+}
+
+enum SkillType {
+  offer
+  want
+}
+
+enum ProficiencyLevel {
+  beginner
+  intermediate
+  expert
+}
+
+enum RequestStatus {
+  pending
+  accepted
+  rejected
+}
+
+enum SessionStatus {
+  scheduled
+  in_progress
+  completed
+  cancelled
+}
+
+enum MatchStatus {
+  active
+  completed
+  cancelled
+  archived
+}
+
+enum ExchangeStatus {
+  pending      // Exchange proposed but not yet accepted
+  active       // Exchange in progress
+  completed    // Exchange finished successfully
+  cancelled    // Exchange cancelled
+}
+
+enum AchievementType {
+  FIRST_SKILL
+  SKILL_COLLECTOR
+  FIRST_MATCH
+  FIVE_CONNECTIONS
+  SOCIAL_BUTTERFLY
+  TEACHER
+  QUICK_LEARNER
+  STREAK_7
+  STREAK_30
+  TOP_RATED
+  SESSION_MASTER
+  VERIFIED
+  XP_1000
+}
+
+enum NotificationType {
+  MATCH_REQUEST
+  MATCH_ACCEPTED
+  NEW_MESSAGE
+  SESSION_REMINDER
+  ACHIEVEMENT_UNLOCKED
+  XP_EARNED
+  RATING_RECEIVED
+}

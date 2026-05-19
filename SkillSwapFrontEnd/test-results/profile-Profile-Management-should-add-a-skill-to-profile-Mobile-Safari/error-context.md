@@ -1,0 +1,125 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - region "Skip navigation links":
+      - button "Skip to main content"
+      - button "Skip to navigation"
+    - main [ref=e3]:
+      - generic [ref=e4]:
+        - link "Skip to main content" [ref=e6]:
+          - /url: "#main-content"
+        - banner [ref=e7]:
+          - generic [ref=e9]:
+            - link "SS" [ref=e10]:
+              - /url: /
+              - generic [ref=e12]: SS
+            - button "Open menu" [ref=e13]:
+              - img [ref=e14]
+        - main [active] [ref=e15]:
+          - generic [ref=e17]:
+            - complementary [ref=e18]:
+              - generic [ref=e20]:
+                - generic [ref=e22]: P
+                - heading "profile1779114359615" [level=2] [ref=e23]
+                - paragraph [ref=e24]: profile1779114359615@example.com
+                - generic [ref=e25]:
+                  - generic [ref=e26]:
+                    - img [ref=e27]
+                    - generic [ref=e29]: New
+                  - generic [ref=e30]:
+                    - img [ref=e31]
+                    - generic [ref=e34]: 0h
+                - generic [ref=e37]:
+                  - button "Toggle dark mode" [ref=e38]:
+                    - img [ref=e39]
+                  - generic [ref=e45]:
+                    - button "Switch to undefined theme" [ref=e46]
+                    - button "Switch to undefined theme" [ref=e51]
+                    - button "Switch to undefined theme" [ref=e56]
+                - generic [ref=e62]:
+                  - generic [ref=e63]: Requests
+                  - generic [ref=e64]: 0 pending
+            - main [ref=e65]:
+              - generic [ref=e66]:
+                - heading "Your Activity Feed" [level=1] [ref=e67]
+                - link "Offer Skill" [ref=e68]:
+                  - /url: /create
+                  - img [ref=e69]
+                  - text: Offer Skill
+              - generic [ref=e72]:
+                - generic [ref=e73]:
+                  - img [ref=e74]
+                  - generic [ref=e79]: "0"
+                  - generic [ref=e80]: Pending Requests
+                - generic [ref=e81]:
+                  - img [ref=e82]
+                  - generic [ref=e84]: "0"
+                  - generic [ref=e85]: Upcoming
+                - generic [ref=e86]:
+                  - img [ref=e87]
+                  - generic [ref=e90]: "0"
+                  - generic [ref=e91]: Hours
+                - generic [ref=e92]:
+                  - img [ref=e93]
+                  - generic [ref=e95]: "0"
+                  - generic [ref=e96]: Reviews
+              - generic [ref=e98]:
+                - generic [ref=e99]:
+                  - heading "Incoming Requests" [level=2] [ref=e100]
+                  - link "View All" [ref=e101]:
+                    - /url: /requests
+                - generic [ref=e102]:
+                  - paragraph [ref=e103]: No pending requests
+                  - paragraph [ref=e104]: Browse skills to send match requests!
+                  - link "Browse Skills" [ref=e105]:
+                    - /url: /browse
+        - contentinfo [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - generic [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e112]: SS
+                  - generic [ref=e113]: SkillSwap
+                - paragraph [ref=e114]: Connect, learn, and grow by exchanging skills with others.
+              - navigation "Platform links" [ref=e115]:
+                - heading "Platform" [level=4] [ref=e116]
+                - list [ref=e117]:
+                  - listitem [ref=e118]:
+                    - link "Browse Skills" [ref=e119]:
+                      - /url: /browse
+                  - listitem [ref=e120]:
+                    - link "Offer a Skill" [ref=e121]:
+                      - /url: /create
+                  - listitem [ref=e122]:
+                    - link "Dashboard" [ref=e123]:
+                      - /url: /dashboard
+              - navigation "Community links" [ref=e124]:
+                - heading "Community" [level=4] [ref=e125]
+                - list [ref=e126]:
+                  - listitem [ref=e127]:
+                    - link "Guidelines" [ref=e128]:
+                      - /url: "#"
+                  - listitem [ref=e129]:
+                    - link "Success Stories" [ref=e130]:
+                      - /url: "#"
+                  - listitem [ref=e131]:
+                    - link "Blog" [ref=e132]:
+                      - /url: "#"
+              - navigation "Support links" [ref=e133]:
+                - heading "Support" [level=4] [ref=e134]
+                - list [ref=e135]:
+                  - listitem [ref=e136]:
+                    - link "Help Center" [ref=e137]:
+                      - /url: "#"
+                  - listitem [ref=e138]:
+                    - link "Contact Us" [ref=e139]:
+                      - /url: "#"
+                  - listitem [ref=e140]:
+                    - link "Privacy Policy" [ref=e141]:
+                      - /url: "#"
+            - generic [ref=e142]: © 2026 SkillSwap. All rights reserved.
+  - iframe [ref=e143]:
+    
+```

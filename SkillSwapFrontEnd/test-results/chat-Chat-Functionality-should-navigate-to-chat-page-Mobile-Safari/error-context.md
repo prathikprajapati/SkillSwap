@@ -1,0 +1,130 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - region "Skip navigation links":
+      - button "Skip to main content"
+      - button "Skip to navigation"
+    - main [ref=e3]:
+      - generic [ref=e4]:
+        - link "Skip to main content" [ref=e6]:
+          - /url: "#main-content"
+        - banner [ref=e7]:
+          - generic [ref=e9]:
+            - link "SS" [ref=e10]:
+              - /url: /
+              - generic [ref=e12]: SS
+            - button "Open menu" [ref=e13]:
+              - img [ref=e14]
+        - main [ref=e15]:
+          - generic [ref=e18]:
+            - img [ref=e19]
+            - generic [ref=e26]:
+              - paragraph [ref=e27]: Backend Offline
+              - paragraph [ref=e28]: Using demo data. Start the backend server for full functionality.
+          - generic [ref=e30]:
+            - complementary [ref=e31]:
+              - generic [ref=e33]:
+                - generic [ref=e35]: TU
+                - heading "Test User" [level=2] [ref=e36]
+                - paragraph [ref=e37]: testuser@gmail.com
+                - generic [ref=e38]:
+                  - generic [ref=e39]:
+                    - img [ref=e40]
+                    - generic [ref=e42]: New
+                  - generic [ref=e43]:
+                    - img [ref=e44]
+                    - generic [ref=e47]: 0h
+                - generic [ref=e50]:
+                  - button "Toggle dark mode" [ref=e51]:
+                    - img [ref=e52]
+                  - generic [ref=e58]:
+                    - button "Switch to undefined theme" [ref=e59]
+                    - button "Switch to undefined theme" [ref=e64]
+                    - button "Switch to undefined theme" [ref=e69]
+                - generic [ref=e75]:
+                  - generic [ref=e76]: Requests
+                  - generic [ref=e77]: 0 pending
+            - main [ref=e78]:
+              - generic [ref=e79]:
+                - heading "Your Activity Feed" [level=1] [ref=e80]
+                - link "Offer Skill" [ref=e81]:
+                  - /url: /create
+                  - img [ref=e82]
+                  - text: Offer Skill
+              - generic [ref=e85]:
+                - generic [ref=e86]:
+                  - img [ref=e87]
+                  - generic [ref=e92]: "0"
+                  - generic [ref=e93]: Pending Requests
+                - generic [ref=e94]:
+                  - img [ref=e95]
+                  - generic [ref=e97]: "0"
+                  - generic [ref=e98]: Upcoming
+                - generic [ref=e99]:
+                  - img [ref=e100]
+                  - generic [ref=e103]: "0"
+                  - generic [ref=e104]: Hours
+                - generic [ref=e105]:
+                  - img [ref=e106]
+                  - generic [ref=e108]: "0"
+                  - generic [ref=e109]: Reviews
+              - generic [ref=e111]:
+                - generic [ref=e112]:
+                  - heading "Incoming Requests" [level=2] [ref=e113]
+                  - link "View All" [ref=e114]:
+                    - /url: /requests
+                - generic [ref=e115]:
+                  - paragraph [ref=e116]: No pending requests
+                  - paragraph [ref=e117]: Browse skills to send match requests!
+                  - link "Browse Skills" [ref=e118]:
+                    - /url: /browse
+        - contentinfo [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - generic [ref=e125]: SS
+                  - generic [ref=e126]: SkillSwap
+                - paragraph [ref=e127]: Connect, learn, and grow by exchanging skills with others.
+              - navigation "Platform links" [ref=e128]:
+                - heading "Platform" [level=4] [ref=e129]
+                - list [ref=e130]:
+                  - listitem [ref=e131]:
+                    - link "Browse Skills" [ref=e132]:
+                      - /url: /browse
+                  - listitem [ref=e133]:
+                    - link "Offer a Skill" [ref=e134]:
+                      - /url: /create
+                  - listitem [ref=e135]:
+                    - link "Dashboard" [ref=e136]:
+                      - /url: /dashboard
+              - navigation "Community links" [ref=e137]:
+                - heading "Community" [level=4] [ref=e138]
+                - list [ref=e139]:
+                  - listitem [ref=e140]:
+                    - link "Guidelines" [ref=e141]:
+                      - /url: "#"
+                  - listitem [ref=e142]:
+                    - link "Success Stories" [ref=e143]:
+                      - /url: "#"
+                  - listitem [ref=e144]:
+                    - link "Blog" [ref=e145]:
+                      - /url: "#"
+              - navigation "Support links" [ref=e146]:
+                - heading "Support" [level=4] [ref=e147]
+                - list [ref=e148]:
+                  - listitem [ref=e149]:
+                    - link "Help Center" [ref=e150]:
+                      - /url: "#"
+                  - listitem [ref=e151]:
+                    - link "Contact Us" [ref=e152]:
+                      - /url: "#"
+                  - listitem [ref=e153]:
+                    - link "Privacy Policy" [ref=e154]:
+                      - /url: "#"
+            - generic [ref=e155]: © 2026 SkillSwap. All rights reserved.
+  - iframe [ref=e156]:
+    
+```

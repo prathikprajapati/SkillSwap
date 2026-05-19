@@ -1,0 +1,404 @@
+/* ============================================
+ * SKILL SWAP ACCESSIBILITY ENHANCEMENTS
+ * WCAG 2.2 AA Compliance Implementation
+ * ============================================
+ * 
+ * Addresses accessibility issues identified in:
+ * - UI/UX Analysis Report (24 issues found)
+ * - Optimization Report (touch target compliance)
+ */
+
+/* ============================================
+ * TOUCH TARGET OPTIMIZATIONS
+ * ============================================ */
+
+/* Ensure 44x44px minimum touch targets for all interactive elements */
+button, 
+a, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"],
+[role="button"],
+.tab,
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  position: relative;
+}
+
+/* Enhanced touch targets for small icons */
+.icon-button,
+button:has(.lucide, .icon),
+[role="button"]:has(.lucide, .icon) {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Expand click area for small interactive elements */
+.small-touch-target {
+  position: relative;
+}
+
+.small-touch-target::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: 1;
+}
+
+/* ============================================
+ * KEYBOARD NAVIGATION ENHANCEMENTS
+ * ============================================ */
+
+/* Skip navigation link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Enhanced focus indicators */
+*:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* High contrast focus for better visibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(var(--primary-rgb), 0.2);
+}
+
+/* Focus management for modals */
+.modal:focus {
+  outline: none;
+}
+
+.modal-dialog:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ============================================
+ * COLOR CONTRAST IMPROVEMENTS
+ * ============================================ */
+
+/* Ensure text meets WCAG AA contrast ratios */
+.text-primary {
+  color: var(--text-primary); /* Should be 4.5:1 or better */
+}
+
+.text-secondary {
+  color: var(--text-secondary); /* Should be 3:1 or better */
+}
+
+.text-muted {
+  color: var(--text-muted); /* Should be 3:1 or better */
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --text-muted: #666666;
+    --border: #000000;
+    --background: #ffffff;
+  }
+  
+  .dark {
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+    --border: #ffffff;
+    --background: #000000;
+  }
+}
+
+/* ============================================
+ * SCREEN READER OPTIMIZATIONS
+ * ============================================ */
+
+/* Screen reader only content */
+.sr-only,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Make screen reader content visible when focused */
+.sr-only-focusable:focus,
+.visually-hidden:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: inherit;
+}
+
+/* ARIA landmark improvements */
+[role="main"],
+[role="navigation"],
+[role="complementary"],
+[role="contentinfo"] {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+[role="main"]:focus,
+[role="navigation"]:focus,
+[role="complementary"]:focus,
+[role="contentinfo"]:focus {
+  outline-color: var(--primary);
+}
+
+/* ============================================
+ * HEADING STRUCTURE FIXES
+ * ============================================ */
+
+/* Ensure proper heading hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.875rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+/* Prevent skipping heading levels */
+.visually-hidden + h1,
+.visually-hidden + h2,
+.visually-hidden + h3,
+.visually-hidden + h4,
+.visually-hidden + h5,
+.visually-hidden + h6 {
+  margin-top: 0;
+}
+
+/* ============================================
+ * FORM ACCESSIBILITY
+ * ============================================ */
+
+/* Enhanced form labels */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Required field indicators */
+.required::after {
+  content: ' *';
+  color: var(--error);
+  font-weight: bold;
+}
+
+/* Field descriptions and error messages */
+.field-description,
+.field-error {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.field-error {
+  color: var(--error);
+  font-weight: 500;
+}
+
+/* Form validation states */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: var(--error);
+  outline: 2px solid var(--error);
+  outline-offset: 2px;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: var(--success);
+}
+
+/* ============================================
+ * INTERACTIVE ELEMENT ENHANCEMENTS
+ * ============================================ */
+
+/* Button state indicators */
+button[aria-pressed="true"] {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+button[aria-expanded="true"]::before {
+  content: '▼ ';
+  font-size: 0.8em;
+}
+
+button[aria-expanded="false"]::before {
+  content: '▶ ';
+  font-size: 0.8em;
+}
+
+/* Link indicators */
+.external-link::after {
+  content: ' ↗';
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* ============================================
+ * MOTION AND ANIMATION
+ * ============================================ */
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Enhanced animations for users who prefer motion */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-enhanced {
+    animation-duration: 0.5s;
+    animation-timing-function: var(--ease-out-expo);
+  }
+}
+
+/* ============================================
+ * RESPONSIVE ACCESSIBILITY
+ * ============================================ */
+
+/* Touch-friendly spacing on mobile */
+@media (max-width: 768px) {
+  button,
+  a,
+  input,
+  .touch-target {
+    min-height: 48px; /* Larger on mobile for fat fingers */
+    min-width: 48px;
+  }
+  
+  /* Increased spacing between interactive elements */
+  .button-group button,
+  .nav-link {
+    margin: 4px 0;
+  }
+}
+
+/* High density desktop improvements */
+@media (min-width: 1200px) {
+  .compact-layout button,
+  .compact-layout a {
+    min-height: 40px; /* Slightly smaller on desktop */
+    min-width: 40px;
+  }
+}
+
+/* ============================================
+ * PRINT ACCESSIBILITY
+ * ============================================ */
+
+@media print {
+  /* Ensure print styles are accessible */
+  .no-print,
+  .interactive-element {
+    display: none;
+  }
+  
+  /* Maintain contrast in print */
+  body {
+    color: #000;
+    background: #fff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #000;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+
+/* ============================================
+ * ACCESSIBILITY TESTING HELPERS
+ * ============================================ */
+
+/* Temporary outline for testing (remove in production) */
+.a11y-outline * {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.a11y-outline button,
+.a11y-outline a,
+.a11y-outline input {
+  outline: 2px solid rgba(0, 255, 0, 0.5);
+}
+
+/* Contrast checker helper */
+.contrast-info::before {
+  content: "Contrast: " attr(data-contrast);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 2px;
+  z-index: 1000;
+}

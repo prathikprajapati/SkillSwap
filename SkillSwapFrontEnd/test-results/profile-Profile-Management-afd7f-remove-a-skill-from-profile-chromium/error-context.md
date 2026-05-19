@@ -1,0 +1,108 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Skip navigation links":
+    - button "Skip to main content"
+    - button "Skip to navigation"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - link "Skip to main content" [ref=e6] [cursor=pointer]:
+        - /url: "#main-content"
+      - banner [ref=e7]:
+        - generic [ref=e9]:
+          - link "SS SkillSwap" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e12]: SS
+            - generic [ref=e13]: SkillSwap
+          - navigation "Main navigation" [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - img [ref=e16]
+              - generic [ref=e19]: Home
+            - link "Browse" [ref=e20] [cursor=pointer]:
+              - /url: /browse
+              - img [ref=e21]
+              - generic [ref=e23]: Browse
+            - link "Dashboard" [ref=e24] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e25]
+              - generic [ref=e28]: Dashboard
+            - link "Exchanges" [ref=e29] [cursor=pointer]:
+              - /url: /exchanges
+              - img [ref=e30]
+              - generic [ref=e32]: Exchanges
+            - link "Messages" [ref=e33] [cursor=pointer]:
+              - /url: /messages
+              - img [ref=e34]
+              - generic [ref=e36]: Messages
+          - generic [ref=e37]:
+            - button [ref=e38]:
+              - img [ref=e39]
+            - button [ref=e42]:
+              - img [ref=e43]
+            - link "Offer Skill" [ref=e49] [cursor=pointer]:
+              - /url: /create
+              - img [ref=e50]
+              - generic [ref=e52]: Offer Skill
+            - link [ref=e53] [cursor=pointer]:
+              - /url: /messages
+              - img [ref=e54]
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e57]
+      - main [ref=e60]:
+        - generic [ref=e63]:
+          - img [ref=e64]
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: Backend Offline
+            - paragraph [ref=e73]: Using demo data. Start the backend server for full functionality.
+        - generic [ref=e76]:
+          - paragraph [ref=e77]: Failed to fetch
+          - button "Retry" [ref=e78]
+      - contentinfo [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - generic [ref=e85]: SS
+                - generic [ref=e86]: SkillSwap
+              - paragraph [ref=e87]: Connect, learn, and grow by exchanging skills with others.
+            - navigation "Platform links" [ref=e88]:
+              - heading "Platform" [level=4] [ref=e89]
+              - list [ref=e90]:
+                - listitem [ref=e91]:
+                  - link "Browse Skills" [ref=e92] [cursor=pointer]:
+                    - /url: /browse
+                - listitem [ref=e93]:
+                  - link "Offer a Skill" [ref=e94] [cursor=pointer]:
+                    - /url: /create
+                - listitem [ref=e95]:
+                  - link "Dashboard" [ref=e96] [cursor=pointer]:
+                    - /url: /dashboard
+            - navigation "Community links" [ref=e97]:
+              - heading "Community" [level=4] [ref=e98]
+              - list [ref=e99]:
+                - listitem [ref=e100]:
+                  - link "Guidelines" [ref=e101] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e102]:
+                  - link "Success Stories" [ref=e103] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e104]:
+                  - link "Blog" [ref=e105] [cursor=pointer]:
+                    - /url: "#"
+            - navigation "Support links" [ref=e106]:
+              - heading "Support" [level=4] [ref=e107]
+              - list [ref=e108]:
+                - listitem [ref=e109]:
+                  - link "Help Center" [ref=e110] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e111]:
+                  - link "Contact Us" [ref=e112] [cursor=pointer]:
+                    - /url: "#"
+                - listitem [ref=e113]:
+                  - link "Privacy Policy" [ref=e114] [cursor=pointer]:
+                    - /url: "#"
+          - generic [ref=e115]: © 2026 SkillSwap. All rights reserved.
+```

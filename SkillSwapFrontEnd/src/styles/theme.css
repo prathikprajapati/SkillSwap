@@ -1,0 +1,507 @@
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   NEW THEME TOKENS - 60-30-10 Design System
+   ============================================ */
+
+:root {
+  /* Colors - 60-30-10 Rule */
+  --color-bg: hsl(240 10% 8%);
+  --color-surface: hsl(240 8% 12%);
+  --color-surface-elevated: hsl(240 8% 16%);
+  --color-accent: hsl(190 90% 50%);
+  --color-accent-soft: hsl(190 70% 60%);
+  --color-accent-dim: hsl(190 50% 40%);
+  --color-border: hsl(240 8% 20%);
+  --color-muted: hsl(240 5% 55%);
+  
+  /* Text */
+  --color-text-primary: hsl(240 5% 85%);
+  --color-text-secondary: hsl(240 5% 65%);
+  --color-text-muted: hsl(240 5% 45%);
+  
+  /* Spacing - 8px Grid */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 40px;
+  --space-2xl: 48px;
+  --space-3xl: 56px;
+  --space-4xl: 64px;
+  
+  /* Typography - 1.25 Scale */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 40px;
+  --text-4xl: 48px;
+  --text-5xl: 60px;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-glow: 0 0 20px hsl(190 90% 50% / 0.3);
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root {
+  font-size: 16px;
+
+  /* Theme-aware hover backgrounds for card items */
+  --card-item-hover-bg: rgba(0, 0, 0, 0.03);
+  --text-tertiary: rgba(0, 0, 0, 0.5);
+
+  /* ============================================
+     THE PALETTE - Color Theme
+     60% Background (Ivory White) | 30% Secondary (Soft Sage) | 10% Accent (Deep Olive)
+     ============================================ */
+
+  /* Primary Colors - 60% Dominant (Background) */
+  --background: #F5F1EC;
+  /* Ivory White */
+  --foreground: #121418;
+  /* Charcoal Black */
+
+  /* Secondary Colors - 30% Balance (Soft Sage) */
+  --primary: #5A8A52;
+  /* Darker Sage for better contrast (was #ACC8A2) */
+  --primary-dark: #4A7A42;
+  /* Darker Sage */
+  --primary-light: #ACC8A2;
+  /* Lighter Sage */
+  --primary-foreground: #FFFFFF;
+  /* White text on primary */
+
+  /* Accent Colors - 10% CTAs & Key Details */
+  --accent: #1A2517;
+  /* Deep Olive */
+  --accent-light: #E8EDE6;
+  /* Light Olive Tint */
+  --accent-dark: #2F3640;
+  /* Dark Slate */
+
+  /* Semantic Colors */
+  --success: #22C55E;
+  /* Green for success (was #ACC8A2) */
+  --warning: #D97706;
+  /* Amber for warning (was #8CB79B) */
+
+  /* UI Elements */
+  --section-bg: #E8EDE6;
+  /* Light sage tint for sections */
+  --card: #FFFFFF;
+  /* White card background */
+  --card-foreground: #121418;
+  /* Charcoal Black text */
+
+  --border: #C4D4BE;
+  /* Darker border for contrast */
+
+  --text-primary: #1A2517;
+  /* Deep Olive for headings */
+  --text-secondary: #4A5568;
+  /* Darker gray for body (was #2F3640) - WCAG AA */
+  --text-disabled: #9CA3AF;
+  /* Gray for disabled (was #8CB79B) */
+
+
+  --popover: #FFFFFF;
+  --popover-foreground: #121418;
+
+  --secondary: #E8EDE6;
+  /* Light sage for secondary */
+  --secondary-foreground: #1A2517;
+
+  --muted: #E8EDE6;
+  --muted-foreground: #2F3640;
+
+  --accent-foreground: #F5F1EC;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --input: transparent;
+  --input-background: #FFFFFF;
+
+  --switch-background: #D4E4CE;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --ring: #ACC8A2;
+
+  --radius: 0.75rem;
+
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A2517;
+  --sidebar-primary: #ACC8A2;
+  --sidebar-primary-foreground: #1A2517;
+  --sidebar-accent: #E8EDE6;
+  --sidebar-accent-foreground: #1A2517;
+  --sidebar-border: #D4E4CE;
+  --sidebar-ring: #ACC8A2;
+}
+
+/* Dark Mode - THE PALETTE */
+.dark {
+  /* Theme-aware hover backgrounds for card items - dark mode */
+  --card-item-hover-bg: rgba(255, 255, 255, 0.06);
+  --text-tertiary: rgba(255, 255, 255, 0.5);
+
+  /* 60% Dominant - Charcoal Black */
+  --background: #121418;
+  --foreground: #F5F1EC;
+
+  /* 30% Secondary - Dark Slate */
+  --primary: #2F3640;
+  --primary-dark: #1A2517;
+  --primary-light: #3A424E;
+  --primary-foreground: #F5F1EC;
+
+  /* 10% Accent - Soft Sage */
+  --accent: #ACC8A2;
+  --accent-light: #1A2517;
+  --accent-dark: #8CB79B;
+
+  /* Semantic Colors */
+  --success: #ACC8A2;
+  --warning: #8CB79B;
+
+  /* UI Elements */
+  --section-bg: #1A1D22;
+  --card: #1A1D22;
+  --card-foreground: #F5F1EC;
+
+  --border: #2F3640;
+
+  --text-primary: #F5F1EC;
+  --text-secondary: #ACC8A2;
+  --text-disabled: #6B7280;
+
+  --popover: #1A1D22;
+  --popover-foreground: #F5F1EC;
+
+  --secondary: #1A1D22;
+  --secondary-foreground: #F5F1EC;
+
+  --muted: #1A1D22;
+  --muted-foreground: #ACC8A2;
+
+  --accent-foreground: #121418;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --input: #2F3640;
+  --input-background: #1A1D22;
+
+  --switch-background: #2F3640;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #ACC8A2;
+
+  /* Sidebar - Dark Mode */
+  --sidebar: #0D0F12;
+  --sidebar-foreground: #F5F1EC;
+  --sidebar-primary: #ACC8A2;
+  --sidebar-primary-foreground: #121418;
+  --sidebar-accent: #1A1D22;
+  --sidebar-accent-foreground: #F5F1EC;
+  --sidebar-border: #2F3640;
+  --sidebar-ring: #ACC8A2;
+
+  /* Charts - Using palette colors */
+  --chart-1: #ACC8A2;
+  --chart-2: #8CB79B;
+  --chart-3: #2F3640;
+  --chart-4: #1A2517;
+  --chart-5: #F5F1EC;
+}
+
+/* ============================================
+   FIGMA MINIMALIST - Color Theme (Light)
+   Clean, Modern, Minimal Design
+   ============================================ */
+
+:root,
+[data-theme="minimalist"] {
+  /* Theme-aware hover backgrounds for card items */
+  --card-item-hover-bg: rgba(0, 0, 0, 0.03);
+  --text-tertiary: rgba(0, 0, 0, 0.5);
+  --ivory: #FAFAFA;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --neon-glow: 0 0 20px rgba(79, 109, 122, 0.3);
+
+  /* Primary Colors */
+  --background: #FAFAFA;
+  --foreground: #111827;
+
+  /* Secondary Colors - WCAG AA compliant */
+  --primary: #3D5A6C;
+  /* Darker primary for better contrast (was #4F6D7A) */
+  --primary-dark: #2D4A5A;
+  --primary-light: #D0E0E8;
+  --primary-foreground: #FFFFFF;
+
+  /* Accent Colors */
+  --accent: #4A9B84;
+  /* Darker accent for WCAG (was #6FB1A0) */
+  --accent-light: #D4EDE6;
+  --accent-indigo: #4F46E5;
+  --accent-indigo-dark: #4338CA;
+
+  /* Semantic Colors */
+  --success: #16A34A;
+  /* Darker green for WCAG (was #22C55E) */
+  --warning: #D97706;
+  /* Darker amber (was #F59E0B) */
+
+  /* UI Elements */
+  --section-bg: #EEF2F5;
+  /* Darker for contrast (was #F3F7F9) */
+  --card: #FFFFFF;
+  --card-foreground: #111827;
+
+  --border: #D1D5DB;
+  /* Darker border (was #E5E7EB) */
+
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  /* Darker gray for body text (was #6B7280) - WCAG AA */
+  --text-disabled: #9CA3AF;
+
+
+  --popover: #FFFFFF;
+  --popover-foreground: #111827;
+
+  --secondary: #F3F4F6;
+  --secondary-foreground: #111827;
+
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
+
+  --accent-foreground: #111827;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --input: transparent;
+  --input-background: #FFFFFF;
+
+  --switch-background: #cbced4;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --ring: #4F6D7A;
+
+  --radius: 0.75rem;
+
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #4F6D7A;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F9FAFB;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #4F6D7A;
+}
+
+/* FIGMA MINIMALIST - Dark Mode */
+[data-theme="minimalist"].dark,
+.dark[data-theme="minimalist"] {
+  /* Theme-aware hover backgrounds */
+  --card-item-hover-bg: rgba(255, 255, 255, 0.06);
+  --text-tertiary: rgba(255, 255, 255, 0.5);
+  --glass-bg: rgba(30, 30, 30, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --neon-glow: 0 0 20px rgba(111, 177, 160, 0.4);
+
+  /* Primary Colors */
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+
+  /* Secondary Colors */
+  --primary: oklch(0.488 0.243 264.376);
+  --primary-dark: oklch(0.4 0.2 264.376);
+  --primary-light: oklch(0.55 0.25 264.376);
+  --primary-foreground: oklch(0.205 0 0);
+
+  /* Accent Colors */
+  --accent: oklch(0.696 0.17 162.48);
+  --accent-light: oklch(0.3 0.1 162.48);
+  --accent-indigo: oklch(0.488 0.243 264.376);
+  --accent-indigo-dark: oklch(0.4 0.2 264.376);
+
+  /* UI Elements */
+  --section-bg: oklch(0.205 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+
+  --border: oklch(0.3 0 0);
+
+  --text-primary: oklch(0.985 0 0);
+  --text-secondary: oklch(0.708 0 0);
+  --text-disabled: oklch(0.5 0 0);
+
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+
+  --accent-foreground: oklch(0.205 0 0);
+
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+
+  --input: oklch(0.269 0 0);
+  --input-background: oklch(0.205 0 0);
+
+  --switch-background: oklch(0.4 0 0);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: oklch(0.488 0.243 264.376);
+
+  /* Sidebar */
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.3 0 0);
+  --sidebar-ring: oklch(0.488 0.243 264.376);
+
+  /* Charts */
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+}
+
+@theme inline {
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}

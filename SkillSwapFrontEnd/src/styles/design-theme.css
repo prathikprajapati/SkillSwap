@@ -1,0 +1,1076 @@
+/* ============================================
+ * SKILL SWAP DESIGN SYSTEM v3.0
+ * Enhanced Brand Identity & Premium UI
+ * ============================================
+ * 
+ * Design Philosophy:
+ * - Distinctive visual identity through unique gradients
+ * - Enhanced motion design with purposeful animations
+ * - Accessible by default, premium by design
+ * - Consistent spacing with 8px grid system
+ */
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+ * COLOR SYSTEM - ROOT VARIABLES
+ * ============================================ */
+:root {
+  /* Universal Dark Claymorphism - Purple / BlueViolet */
+  --color-accent-primary: #8B5CF6;
+  /* blueviolet */
+  --color-accent-primary-light: #A78BFA;
+  --color-accent-primary-dark: #6D28D9;
+  --color-accent-secondary: #60A5FA;
+  /* blue */
+  --color-accent-tertiary: #22D3EE;
+  /* cyan accent */
+
+  /* Background Colors */
+  --color-bg-primary: #0A0A12;
+  --color-bg-surface: #121223;
+  --color-bg-elevated: #18182F;
+  --color-bg-gradient-start: #0F0F1E;
+  --color-bg-gradient-end: #17172A;
+
+  /* Text Colors - High Contrast for Accessibility */
+  --color-text-primary: #FAFAFF;
+  --color-text-secondary: #C7C7E6;
+  --color-text-tertiary: #9A9ABF;
+  --color-text-muted: #6D6D90;
+
+  /* Border & Divider */
+  --color-border: #24243A;
+  --color-border-subtle: #1B1B2B;
+
+  /* Semantic Colors */
+  --color-success: #34D399;
+  --color-success-light: rgba(52, 211, 153, 0.18);
+  --color-warning: #FBBF24;
+  --color-warning-light: rgba(251, 191, 36, 0.18);
+  --color-error: #F87171;
+  --color-error-light: rgba(248, 113, 113, 0.18);
+  --color-info: #60A5FA;
+  --color-info-light: rgba(96, 165, 250, 0.18);
+
+
+  /* Spacing System - 8px Grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Border Radius Scale */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Typography Scale */
+  --text-h1: clamp(2rem, 5vw, 3rem);
+  --text-h2: clamp(1.5rem, 4vw, 2rem);
+  --text-h3: clamp(1.25rem, 3vw, 1.5rem);
+  --text-h4: 1.25rem;
+  --text-h5: 1.125rem;
+  --text-body: 1rem;
+  --text-body-lg: 1.125rem;
+  --text-small: 0.875rem;
+  --text-xs: 0.75rem;
+  --text-caption: 0.75rem;
+
+  /* Font Families */
+  --font-display: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif;
+  --font-body: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Animation Timing - Easing Functions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Animation Durations */
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+
+  /* Shadows - Claymorphism Style */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-clay: 10px 10px 20px rgba(0, 0, 0, 0.55), -10px -10px 20px rgba(255, 255, 255, 0.05);
+  --shadow-clay-hover: 14px 14px 28px rgba(0, 0, 0, 0.65), -14px -14px 28px rgba(255, 255, 255, 0.07);
+
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+  /* Z-Index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-toast: 1080;
+}
+
+/* ============================================
+ * DARK MODE - REFINED COLORS
+ * ============================================ */
+.dark {
+  /* Brand Colors - Adjusted for Dark Mode */
+  --color-accent-primary: #8BB077;
+  --color-accent-primary-light: #A5C994;
+  --color-accent-primary-dark: #6B8E5A;
+  --color-accent-secondary: #60A5FA;
+  --color-accent-tertiary: #FBBF24;
+
+  /* Background Colors - Pure Black Base */
+  --color-bg-primary: #0A0A0A;
+  --color-bg-surface: #141414;
+  --color-bg-elevated: #1E1E1E;
+  --color-bg-gradient-start: #0F0F0F;
+  --color-bg-gradient-end: #1A1A1A;
+
+  /* Text Colors - High Contrast on Dark */
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #A3A3A3;
+  --color-text-tertiary: #737373;
+  --color-text-muted: #525252;
+
+  /* Border & Divider */
+  --color-border: #262626;
+  --color-border-subtle: #1A1A1A;
+
+  /* Semantic Colors - Brighter for Dark Mode */
+  --color-success: #34D399;
+  --color-success-light: rgba(52, 211, 153, 0.2);
+  --color-warning: #FBBF24;
+  --color-warning-light: rgba(251, 191, 36, 0.2);
+  --color-error: #F87171;
+  --color-error-light: rgba(248, 113, 113, 0.2);
+  --color-info: #60A5FA;
+  --color-info-light: rgba(96, 165, 250, 0.2);
+
+  /* Dark Mode Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  --shadow-clay: 8px 8px 16px #050505, -8px -8px 16px #1f1f1f;
+  --shadow-clay-hover: 12px 12px 24px #030303, -12px -12px 24px #252525;
+}
+
+/* ============================================
+ * THEME CONFIGURATION
+ * ============================================ */
+@theme inline {
+  /* Color Mappings */
+  --color-background: var(--color-bg-primary);
+  --color-foreground: var(--color-text-primary);
+  --color-surface: var(--color-bg-surface);
+  --color-elevated: var(--color-bg-elevated);
+  --color-primary: var(--color-accent-primary);
+  --color-primary-light: var(--color-accent-primary-light);
+  --color-primary-dark: var(--color-accent-primary-dark);
+  --color-secondary: var(--color-accent-secondary);
+  --color-tertiary: var(--color-accent-tertiary);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-tertiary: var(--color-text-tertiary);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-success: var(--color-success);
+  --color-success-light: var(--color-success-light);
+  --color-warning: var(--color-warning);
+  --color-warning-light: var(--color-warning-light);
+  --color-error: var(--color-error);
+  --color-error-light: var(--color-error-light);
+  --color-info: var(--color-info);
+  --color-info-light: var(--color-info-light);
+
+  /* Font Mappings */
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  /* Border Radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-full: var(--radius-full);
+
+  /* Spacing */
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+  --spacing-10: var(--space-10);
+  --spacing-12: var(--space-12);
+  --spacing-16: var(--space-16);
+  --spacing-20: var(--space-20);
+  --spacing-24: var(--space-24);
+
+  /* Typography */
+  --text-h1: var(--text-h1);
+  --text-h2: var(--text-h2);
+  --text-h3: var(--text-h3);
+  --text-h4: var(--text-h4);
+  --text-h5: var(--text-h5);
+  --text-body: var(--text-body);
+  --text-body-lg: var(--text-body-lg);
+  --text-sm: var(--text-small);
+  --text-xs: var(--text-xs);
+  --text-caption: var(--text-caption);
+
+  /* Animations */
+  --animate-fade-in: fade-in 0.3s var(--ease-out-expo) forwards;
+  --animate-fade-in-up: fade-in-up 0.5s var(--ease-out-expo) forwards;
+  --animate-fade-in-down: fade-in-down 0.5s var(--ease-out-expo) forwards;
+  --animate-slide-in-right: slide-in-right 0.4s var(--ease-out-expo) forwards;
+  --animate-scale-in: scale-in 0.3s var(--ease-spring) forwards;
+  --animate-bounce-in: bounce-in 0.5s var(--ease-spring) forwards;
+  --animate-shimmer: shimmer 2s infinite linear;
+  --animate-pulse-soft: pulse-soft 2s ease-in-out infinite;
+  --animate-spin-slow: spin 3s linear infinite;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+
+    50% {
+      transform: scale(1.05);
+    }
+
+    70% {
+      transform: scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* ============================================
+ * BASE LAYER - GLOBAL STYLES
+ * ============================================ */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Typography Hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+
+  h1 {
+    @apply text-h1 font-bold leading-tight;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-h2 font-bold leading-snug;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-h3 font-semibold leading-snug;
+  }
+
+  h4 {
+    @apply text-h4 font-semibold leading-normal;
+  }
+
+  h5 {
+    @apply text-h5 font-semibold leading-normal;
+  }
+
+  p {
+    @apply text-body font-body leading-relaxed;
+  }
+
+  /* Focus Styles - Accessible */
+  :focus {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+    transition: box-shadow var(--duration-fast) var(--ease-out-expo);
+  }
+
+
+  /* Selection Styles */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+/* ============================================
+ * COMPONENT LAYER - REUSABLE PATTERNS
+ * ============================================ */
+@layer components {
+
+  /* Card Variants */
+  .card {
+    @apply bg-elevated rounded-lg border border-border shadow-sm;
+    transition: all var(--duration-normal) var(--ease-out-expo);
+  }
+
+  .card-hover {
+    @apply bg-elevated rounded-lg border border-border shadow-md;
+    transition: all var(--duration-normal) var(--ease-out-expo);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+  }
+
+  .card-elevated {
+    @apply bg-elevated rounded-xl border border-border;
+    box-shadow: var(--shadow-clay);
+    transition: all var(--duration-normal) var(--ease-out-expo);
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--shadow-clay-hover);
+    transform: translateY(-2px);
+  }
+
+  /* Button System */
+  .btn-base {
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-lg;
+    @apply transition-all duration-200;
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-lg;
+    @apply transition-all duration-200;
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+    min-height: 44px;
+    min-width: 44px;
+
+    @apply px-6 py-2.5 bg-primary text-white;
+    @apply ring-primary;
+
+    &:hover {
+      @apply bg-primary-dark shadow-lg -translate-y-0.5;
+    }
+
+
+    &:active {
+      @apply scale-95;
+    }
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-lg;
+    @apply transition-all duration-200;
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+    min-height: 44px;
+    min-width: 44px;
+
+    @apply px-6 py-2.5 bg-transparent border-2 border-primary text-primary;
+    @apply ring-primary;
+
+
+    &:hover {
+      @apply bg-primary/5 shadow-md -translate-y-0.5;
+    }
+
+    &:active {
+      @apply scale-95;
+    }
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-lg;
+    @apply transition-all duration-200;
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+    min-height: 44px;
+    min-width: 44px;
+
+    @apply px-6 py-2.5 bg-transparent text-primary;
+    @apply ring-primary;
+
+
+    &:hover {
+      @apply bg-primary/10;
+    }
+
+    &:active {
+      @apply scale-95;
+    }
+  }
+
+  .btn-destructive {
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-lg;
+    @apply transition-all duration-200;
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+    min-height: 44px;
+    min-width: 44px;
+
+    @apply px-6 py-2.5 bg-error text-white;
+    @apply ring-error;
+
+
+    &:hover {
+      @apply bg-error/90 shadow-lg -translate-y-0.5;
+    }
+
+    &:active {
+      @apply scale-95;
+    }
+  }
+
+
+
+  .btn-loading {
+    @apply opacity-70 cursor-not-allowed;
+  }
+
+  /* Input System */
+  .input-base {
+    @apply w-full h-11 px-4 py-2.5;
+    @apply bg-background border-2 border-border/50 rounded-lg;
+    @apply text-foreground placeholder:text-text-muted;
+    @apply transition-all duration-200;
+    @apply focus:outline-none focus:border-primary focus:ring-3 focus:ring-primary/20;
+    /* Enhanced contrast for accessibility */
+    @apply dark:bg-surface dark:border-border/70;
+  }
+
+  /* Enhanced Dropdown/Select Styling */
+  select.input-base {
+    @apply appearance-none cursor-pointer;
+    @apply bg-background border-2 border-border/50 rounded-lg;
+    @apply text-foreground;
+    @apply transition-all duration-200;
+    @apply focus:outline-none focus:border-primary focus:ring-3 focus:ring-primary/20;
+    @apply dark:bg-surface dark:border-border/70;
+    /* High contrast for dropdown options */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+  }
+
+  select.input-base option {
+    @apply bg-background text-foreground;
+    @apply dark:bg-surface dark:text-foreground;
+    @apply py-2 px-3;
+  }
+
+  /* Focus states for better accessibility */
+  select.input-base:focus {
+    @apply border-primary ring-3 ring-primary/20;
+  }
+
+  .input-error {
+    @apply border-error bg-error-light/30;
+    @apply focus:border-error focus:ring-error/30;
+  }
+
+  .input-success {
+    @apply border-success bg-success-light/30;
+    @apply focus:border-success focus:ring-success/30;
+  }
+
+  /* Form Elements */
+  .form-label {
+    @apply block text-sm font-medium text-foreground mb-1.5;
+  }
+
+  .form-helper {
+    @apply text-xs text-text-tertiary mt-1;
+  }
+
+  .form-error {
+    @apply flex items-center gap-1.5 text-sm text-error mt-1.5;
+  }
+
+  /* Badge System */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+    @apply bg-primary/10 text-primary;
+  }
+
+  .badge-success {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+    @apply bg-success/10 text-success;
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+    @apply bg-warning/10 text-warning;
+  }
+
+  .badge-error {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+    @apply bg-error/10 text-error;
+  }
+
+  .badge-info {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+    @apply bg-info/10 text-info;
+  }
+
+  /* Gradient Backgrounds */
+  .gradient-hero {
+    background: linear-gradient(135deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 50%, var(--color-accent-primary-light)/5 100%);
+  }
+
+  .gradient-brand {
+    background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-primary-light) 100%);
+  }
+
+  .gradient-subtle {
+    background: linear-gradient(180deg, transparent 0%, var(--color-surface) 100%);
+  }
+
+  /* Animation Utilities */
+  .animate-in {
+    animation: fade-in-up 0.5s var(--ease-out-expo) forwards;
+  }
+
+  .animate-stagger-1 {
+    animation-delay: 0.1s;
+  }
+
+  .animate-stagger-2 {
+    animation-delay: 0.2s;
+  }
+
+  .animate-stagger-3 {
+    animation-delay: 0.3s;
+  }
+
+  .animate-stagger-4 {
+    animation-delay: 0.4s;
+  }
+
+  .animate-stagger-5 {
+    animation-delay: 0.5s;
+  }
+
+  /* Shimmer/Skeleton Effect */
+  .shimmer {
+    background: linear-gradient(90deg,
+        var(--color-surface) 25%,
+        var(--color-bg-elevated) 50%,
+        var(--color-surface) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Glassmorphism Effect */
+  .glass {
+    @apply bg-elevated/80 backdrop-blur-md border border-border;
+  }
+
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-md border border-white/10;
+  }
+
+  /* Scroll Snap */
+  .snap-container {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .snap-item {
+    scroll-snap-align: start;
+  }
+
+  /* Icon Utilities */
+  .icon-sm {
+    @apply w-4 h-4;
+  }
+
+  .icon-md {
+    @apply w-5 h-5;
+  }
+
+  .icon-lg {
+    @apply w-6 h-6;
+  }
+
+  .icon-xl {
+    @apply w-8 h-8;
+  }
+
+  /* Touch Target Utilities */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Screen Reader Only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ============================================
+ * UTILITY LAYER - HELPER CLASSES
+ * ============================================ */
+@layer utilities {
+
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient Text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-primary-light) 100%);
+  }
+
+  /* Safe Area Utilities */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  /* Line Clamp */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Hide Scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Custom Scrollbar */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--color-border);
+    border-radius: 3px;
+  }
+
+  /* ============================================
+   * SEPARATORS & DIVIDERS
+   * ============================================ */
+
+  /* Standard horizontal divider */
+  .divider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-border);
+    margin: 1.5rem 0;
+    border-radius: 1px;
+    opacity: 0.8;
+  }
+
+  /* Compact divider for tight spaces */
+  .divider-compact {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-border);
+    margin: 0.75rem 0;
+    opacity: 0.6;
+  }
+
+  /* Vertical divider */
+  .divider-vertical {
+    width: 2px;
+    height: 100%;
+    min-height: 2rem;
+    background-color: var(--color-border);
+    margin: 0 1.5rem;
+    border-radius: 1px;
+    opacity: 0.6;
+  }
+
+  /* Gradient divider - subtle fade effect */
+  .divider-gradient {
+    height: 2px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        var(--color-primary) 20%,
+        var(--color-secondary) 50%,
+        var(--color-primary) 80%,
+        transparent 100%);
+    margin: 1.5rem 0;
+    border-radius: 1px;
+    opacity: 0.5;
+  }
+
+  /* Dotted divider for less emphasis */
+  .divider-dotted {
+    height: 1px;
+    width: 100%;
+    margin: 1.5rem 0;
+    background: repeating-linear-gradient(90deg,
+        var(--color-border) 0px,
+        var(--color-border) 4px,
+        transparent 4px,
+        transparent 8px);
+  }
+
+  /* Section separator with spacing */
+  .section-divider {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .section-divider {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+    height: 1px;
+    background-color: var(--color-border);
+  }
+
+  /* Card separator - between cards */
+  .card-separator {
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 1rem 0;
+    opacity: 0.5;
+  }
+
+  /* Nav separator - for sidebar/menu */
+  .nav-divider {
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 0.5rem 0.75rem;
+    opacity: 0.4;
+  }
+
+  /* Form section separator */
+  .form-divider {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        var(--color-border) 10%,
+        var(--color-border) 90%,
+        transparent 100%);
+    margin: 1.5rem 0;
+    opacity: 0.6;
+  }
+
+  /* Wavy separator for visual interest */
+  .separator-wave {
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .separator-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 3rem;
+  }
+
+  .separator-wave .shape-fill {
+    fill: var(--color-surface);
+  }
+
+  /* Angled separator */
+  .separator-angled {
+    height: 4rem;
+    background: linear-gradient(135deg,
+        var(--color-bg-primary) 0%,
+        var(--color-surface) 50%,
+        var(--color-bg-primary) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  }
+
+  @media (min-width: 768px) {
+    .separator-angled {
+      height: 6rem;
+    }
+  }
+
+  /* Inset divider - for nested content */
+  .divider-inset {
+    height: 1px;
+    background-color: var(--color-border);
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Dark mode adjustments */
+  .dark .divider,
+  .dark .divider-compact,
+  .dark .divider-vertical {
+    background-color: var(--color-border);
+    opacity: 0.6;
+  }
+}
+
+/* ============================================
+ * SEPARATORS & DIVIDERS - Outside @layer for Vite/Tailwind v4 compatibility
+ * ============================================ */
+
+/* Standard horizontal divider */
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-border);
+  margin: 1.5rem 0;
+  border-radius: 1px;
+  opacity: 0.8;
+}
+
+/* Compact divider for tight spaces */
+.divider-compact {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-border);
+  margin: 0.75rem 0;
+  opacity: 0.6;
+}
+
+/* Vertical divider */
+.divider-vertical {
+  width: 2px;
+  height: 100%;
+  min-height: 2rem;
+  background-color: var(--color-border);
+  margin: 0 1.5rem;
+  border-radius: 1px;
+  opacity: 0.6;
+}
+
+/* Gradient divider */
+.divider-gradient {
+  height: 2px;
+  background: linear-gradient(90deg,
+      transparent 0%,
+      var(--color-primary) 20%,
+      var(--color-secondary) 50%,
+      var(--color-primary) 80%,
+      transparent 100%);
+  margin: 1.5rem 0;
+  border-radius: 1px;
+  opacity: 0.5;
+}
+
+/* Nav separator */
+.nav-divider {
+  height: 1px;
+  background-color: var(--color-border);
+  margin: 0.5rem 0.75rem;
+  opacity: 0.4;
+}
+
+/* Form section separator */
+.form-divider {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg,
+      transparent 0%,
+      var(--color-border) 10%,
+      var(--color-border) 90%,
+      transparent 100%);
+  margin: 1.5rem 0;
+  opacity: 0.6;
+}
+
+/* Dark mode */
+.dark .divider,
+.dark .divider-compact,
+.dark .divider-vertical,
+.dark .nav-divider,
+.dark .form-divider {
+  background-color: var(--color-border);
+  opacity: 0.5;
+}
