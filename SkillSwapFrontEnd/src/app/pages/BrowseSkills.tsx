@@ -46,7 +46,7 @@ function BrowseSkills() {
     "Crafts"
   ];
 
-  const levels = ["Beginner", "Intermediate", "Advanced"];
+  const levels = ["Beginner", "Intermediate", "Expert"];
 
   useEffect(() => {
     fetchUserSkills();
@@ -92,7 +92,10 @@ function BrowseSkills() {
     return userSkills.filter(skill => {
       const matchesSearch = skill.skill?.name?.toLowerCase().includes(searchLower) || 
                            skill.skill?.category?.toLowerCase().includes(searchLower);
-      const matchesCategory = !selectedCategory || selectedCategory === "All" || skill.skill?.category === selectedCategory;
+      const matchesCategory =
+        !selectedCategory ||
+        selectedCategory === "All" ||
+        (skill.skill?.category ? skill.skill.category.toLowerCase() === selectedCategory.toLowerCase() : false);
       const matchesLevel = !selectedLevel || skill.proficiency_level === selectedLevel.toLowerCase();
       return matchesSearch && matchesCategory && matchesLevel;
     });

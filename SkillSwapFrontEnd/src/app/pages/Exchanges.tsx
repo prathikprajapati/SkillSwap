@@ -53,7 +53,20 @@ export default function Exchanges() {
       }
 
       const data = await response.json();
-      setExchanges(data);
+
+      // Normalize response shape (some backends may return skill_name / skill.name)
+      const normalized: Exchange[] = (Array.isArray(data) ? data : []).map(
+        (ex: any) => ({
+          ...ex,
+          skillName:
+            ex?.skillName ??
+            ex?.skill_name ??
+            ex?.skill?.name ??
+            "Unknown Skill",
+        }),
+      );
+
+      setExchanges(normalized);
     } catch (err) {
       console.error("Error fetching exchanges:", err);
       setError(err instanceof Error ? err.message : "Failed to load exchanges");
@@ -260,7 +273,7 @@ export default function Exchanges() {
 
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span>with</span>
-                      <span className="font-medium text-foreground">
+                      <span className=" font-medium text-mutes-foreground">
                         {exchange.otherUser.name}
                       </span>
                       <span className="text-border">•</span>

@@ -158,7 +158,7 @@ export default function Dashboard() {
                   {user?.name ? getInitials(user.name) : 'U'}
                 </span>
               </div>
-              <h2 className="text-xl mb-1">{user?.name || 'User'}</h2>
+              <h2 className="text-muted-foreground text-xl mb-1">{user?.name || 'User'}</h2>
               <p className="text-sm text-muted-foreground mb-4">{user?.email || ''}</p>
               
               <div className="flex items-center gap-4 w-full justify-center mb-4 text-sm">

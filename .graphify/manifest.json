@@ -1,0 +1,1678 @@
+{
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\e2e\\auth.spec.ts": {
+    "mtime": 1773082502081.5432,
+    "hash": "64eab6d39652d860a9c5cd4766b56051"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\e2e\\chat.spec.ts": {
+    "mtime": 1773082502083.695,
+    "hash": "2f2bece66f64c2b7767dcf7180aa178c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\e2e\\matches.spec.ts": {
+    "mtime": 1773082502081.5432,
+    "hash": "642cbc5ec20881cea59032003ef20f87"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\e2e\\profile.spec.ts": {
+    "mtime": 1773082502079.7732,
+    "hash": "b2ef19df8c1b7977f64bb1b19a54eba2"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\eslint.config.js": {
+    "mtime": 1773082502303.8186,
+    "hash": "bd004944a557ff2db5750b2b6a7e456c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\playwright.config.ts": {
+    "mtime": 1773082502330.9746,
+    "hash": "28ca1fbda1bb3a43211036d465207d3e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\postcss.config.mjs": {
+    "mtime": 1773082502309.7725,
+    "hash": "512ddfe3175b0d294ec1e4789f27885f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\public\\service-worker.js": {
+    "mtime": 1777203097266.3953,
+    "hash": "5379d534e6b54b0b2a4e4675359eadeb"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\auth.ts": {
+    "mtime": 1777349087220.8235,
+    "hash": "eb861772f992cfba3c2dcbdc3f4633c0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\client.ts": {
+    "mtime": 1778100962737.1072,
+    "hash": "0fa7a9a4c917bf3f193efbeec7718b94"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\gamification.ts": {
+    "mtime": 1773082501807.5254,
+    "hash": "d9dddd718c9bfce6c5df37fe5d2c9ac3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\matches.ts": {
+    "mtime": 1773082501802.8152,
+    "hash": "bbc015c7c2c4e6e38b9b9a042efee3a1"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\messages.ts": {
+    "mtime": 1773082501805.4397,
+    "hash": "9bcec2cee69839195e593685f46363e4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\requests.ts": {
+    "mtime": 1773082501802.3079,
+    "hash": "5b4c7fd62f18e2f3b1556199197df2ff"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\sessions.ts": {
+    "mtime": 1777345673081.4739,
+    "hash": "f7b5197466bf3fe248b076f90260d5f6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\skills.ts": {
+    "mtime": 1778100992954.8008,
+    "hash": "c6aef82c125e20abaf96daa26502cd65"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\api\\users.ts": {
+    "mtime": 1778101000134.0388,
+    "hash": "48d6932675dffcc4ca097a62d4e9ccd4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\App.tsx": {
+    "mtime": 1779113756039.3481,
+    "hash": "0d59475548f4a14f323947be883bbb08"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ErrorBoundary.tsx": {
+    "mtime": 1773082502009.2283,
+    "hash": "10117b8f05f42cf13de6c015a3f126e3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ProtectedRoute.tsx": {
+    "mtime": 1777349900824.068,
+    "hash": "5417ebf3283505edd7412ffbc0ee3308"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\RootLayout.tsx": {
+    "mtime": 1779103926916.4937,
+    "hash": "7937e9eb0525ef4db7d8f868a6a457fe"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\SkipNavigation.tsx": {
+    "mtime": 1773082502012.7473,
+    "hash": "b801b126d9c1745de9726ad4801d32b0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ThemeWrapper.tsx": {
+    "mtime": 1778105558409.5,
+    "hash": "7b6b88f89b7afdff83bb707bcc131bc9"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\accordion.tsx": {
+    "mtime": 1773082501984.3943,
+    "hash": "b70c6a9ebee8874bb4e5880da21a4f44"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\alert-dialog.tsx": {
+    "mtime": 1773082501992.5503,
+    "hash": "fffdba13911be5058cb47ae712dd00b6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\alert.tsx": {
+    "mtime": 1777203075391.5486,
+    "hash": "6eeb3faee05d3efa592accb1e1409169"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\aspect-ratio.tsx": {
+    "mtime": 1773082501980.3386,
+    "hash": "2c1c30af12401d88f8df52c3c235ed67"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\avatar.tsx": {
+    "mtime": 1777319056352.2,
+    "hash": "386ab38e62b7ce72f4581c80d529a664"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\BackendStatus.tsx": {
+    "mtime": 1778101010169.666,
+    "hash": "52f4b078f3825b5a25064bc6128baba7"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\badge.tsx": {
+    "mtime": 1777319045824.473,
+    "hash": "55f636d5ddf4274d9fea3502e5a9c022"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\breadcrumb.tsx": {
+    "mtime": 1773082501989.9888,
+    "hash": "ffaa516f002d988d1a3d2cffb2a5f175"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\button.tsx": {
+    "mtime": 1777318972895.2092,
+    "hash": "e41e66deb18e99f0c6adad0833b9bda3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\calendar.tsx": {
+    "mtime": 1773082501996.5652,
+    "hash": "f5fd009223e3652640773e98dcc5e59f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\card-v2.tsx": {
+    "mtime": 1777203075395.1936,
+    "hash": "90a3396fbb46b003aaea053f69c817b3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\card.tsx": {
+    "mtime": 1777318994773.7449,
+    "hash": "3636f7385a18e766d8e9703ade2f3c3a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\carousel.tsx": {
+    "mtime": 1773082501985.3955,
+    "hash": "c89d7f94c3d16dcf2d4e34f0b8034084"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\category-modal.tsx": {
+    "mtime": 1777989236199.6208,
+    "hash": "caff1e633dfb959e50ddadeb8b70906a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\chart.tsx": {
+    "mtime": 1773082502002.567,
+    "hash": "42ef994d83724dcaacbdddeaddf7b18b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\checkbox.tsx": {
+    "mtime": 1777203075396.2666,
+    "hash": "870354b2377af15d6a0bcaab29cec607"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\collapsible.tsx": {
+    "mtime": 1773082501973.392,
+    "hash": "fb83308ef990f33e60b56b22c6adb007"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\command.tsx": {
+    "mtime": 1773082501998.1562,
+    "hash": "41e1d0c759f0327b879dfec678cfe781"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\ConfirmModal.tsx": {
+    "mtime": 1773082501978.3318,
+    "hash": "606a8f0f02d738cb45078072a96fd521"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\context-menu.tsx": {
+    "mtime": 1773082501967.4885,
+    "hash": "d613a68dc16ac28500406d3ed7d1cc44"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\dialog.tsx": {
+    "mtime": 1777203075397.27,
+    "hash": "7223c34f341b841d3ae528108604b03a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\Dock.tsx": {
+    "mtime": 1773082501979.3406,
+    "hash": "62ed87fbf368e86607ac134895367183"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\drawer.tsx": {
+    "mtime": 1773082501986.3967,
+    "hash": "eb7f3850284135ed58adeeb2205e739c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1778100462281.6636,
+    "hash": "e0f14eac83ff257c246ebad0060c749b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\EmptyState.tsx": {
+    "mtime": 1777983594704.0684,
+    "hash": "b41e042dea5ed6ac3fa22d8c1d79699a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\EnhancedButton.tsx": {
+    "mtime": 1777983685293.9749,
+    "hash": "50ed5d88cc26c8b59ec1476cc44891cf"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\FocusTrap.tsx": {
+    "mtime": 1777983595270.72,
+    "hash": "77ce48c4ff4c82a908c30277810eb5fd"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\form.tsx": {
+    "mtime": 1773082501990.981,
+    "hash": "7bd150b19048c2af09b63dd0a260b179"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\FormInput.tsx": {
+    "mtime": 1777983545625.3086,
+    "hash": "4028b573948ab3bab78edfc0ae3225eb"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\hover-card.tsx": {
+    "mtime": 1773082502008.2268,
+    "hash": "2225b5b5db78c8dde5f0aff6aa08458c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\input-otp.tsx": {
+    "mtime": 1773082501975.3987,
+    "hash": "a74758e038db3ef3301c58bd0ac01753"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\input.tsx": {
+    "mtime": 1777319009732.3923,
+    "hash": "ee6a7da310ce684442534f9cc8665b15"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\label.tsx": {
+    "mtime": 1777319032745.356,
+    "hash": "af1cc595d3044ec0c4d4acc377902324"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\LanguageIcons.tsx": {
+    "mtime": 1773082501985.3955,
+    "hash": "6d9200540c51b115ee0bf9fb346140ac"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\LightRays.tsx": {
+    "mtime": 1773082501981.3396,
+    "hash": "43aab9212c45990018db44abcc8e5c2b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\MagicBento.tsx": {
+    "mtime": 1773082501982.3389,
+    "hash": "22513001cf7f31aecd4c9513654bc6c9"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\match-card.tsx": {
+    "mtime": 1777988864487.7593,
+    "hash": "23bd961c6b3d8f262a8fa7c8ddc7a0ca"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\MeetingModal.tsx": {
+    "mtime": 1779104021148.5215,
+    "hash": "08e7e1cd8a099599055dda908aef6685"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\MeetingModalNew.tsx": {
+    "mtime": 1778104688154.0068,
+    "hash": "9b1998e591c6291ba7b8b5b820e23669"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\menubar.tsx": {
+    "mtime": 1773082501967.4885,
+    "hash": "c955592a9b680c223a6aa7ba5eca19af"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\MessageSkeleton.tsx": {
+    "mtime": 1778099963556.0818,
+    "hash": "2eea65a789a483cea73d5bbe459752f0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\navigation-menu.tsx": {
+    "mtime": 1773082501963.4885,
+    "hash": "c6ecd95499ba6e8fe4d8fdd16be18d24"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\PageTransition.tsx": {
+    "mtime": 1777983685059.5327,
+    "hash": "1a1078feec70fdb1bbd0fe08c18a24c0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\pagination.tsx": {
+    "mtime": 1773082502003.5679,
+    "hash": "7531a02a3c7a33d56e2f668ffd7a0d35"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\popover.tsx": {
+    "mtime": 1773082501995.5703,
+    "hash": "3db5181d3777cead79949d25c31872aa"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\progress.tsx": {
+    "mtime": 1777203075398.27,
+    "hash": "d69ec7a4df6e3009feaabf01d8b075a3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\radio-group.tsx": {
+    "mtime": 1777203075399.2698,
+    "hash": "376e8361aa0bc7ff3c8eef44f8e38134"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\request-card.tsx": {
+    "mtime": 1777988895872.698,
+    "hash": "b92a9e08d054e00623f45668ff808b91"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\resizable.tsx": {
+    "mtime": 1773082501990.981,
+    "hash": "dbedce80325c20ea43ce386433e87415"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\scroll-area.tsx": {
+    "mtime": 1773082501974.3997,
+    "hash": "ceed8816f5ac36bda5c970e49fed5347"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\ScrollCarousel.tsx": {
+    "mtime": 1779182582457.7185,
+    "hash": "40b6779b4bf2d48af5d3b2802cc77f87"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\select.tsx": {
+    "mtime": 1777203075399.2698,
+    "hash": "a93d66d2341e4d2230b669ae296d3b7c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\separator.tsx": {
+    "mtime": 1777203075400.7727,
+    "hash": "c1e955cb565c232b29c303283ba284c8"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\sheet.tsx": {
+    "mtime": 1773082501981.3396,
+    "hash": "14f866a1ec7bd747f499b606f8e40cb3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\sidebar.tsx": {
+    "mtime": 1773082501986.3967,
+    "hash": "6f2411b67de8153c8890d9688b636cb0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\skeleton.tsx": {
+    "mtime": 1777203075401.7847,
+    "hash": "90c1cb63661048f2b0c449de2007c1a9"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\skill-chip.tsx": {
+    "mtime": 1773082501980.3386,
+    "hash": "7f496ddab5db35a5d2f84e924f8472a6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\skill-swap-button.tsx": {
+    "mtime": 1773082501976.9055,
+    "hash": "d1a0f14c86331b884febc7917f677852"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\skill-swap-input.tsx": {
+    "mtime": 1773082501964.4875,
+    "hash": "bc251f04e309c6a69367e1a73108e5a3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\skill-swap-select.tsx": {
+    "mtime": 1773082501966.4905,
+    "hash": "b7b4deaf65b7c5a3a3a04555cecf0ec4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\slider.tsx": {
+    "mtime": 1777203075401.7847,
+    "hash": "ab772b297b05f4dcd0239f9fcdb6cb7b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\sonner.tsx": {
+    "mtime": 1773082501972.7466,
+    "hash": "ace3a6465858e1f9a441724008f2d921"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\SpotlightCard.tsx": {
+    "mtime": 1773082501975.3987,
+    "hash": "41525c2909bba537a955c8513451fe8f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\Stepper.tsx": {
+    "mtime": 1773082501973.392,
+    "hash": "c2f8b0b02d7ebbdd96116f41c47ed728"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\switch.tsx": {
+    "mtime": 1777203075401.7847,
+    "hash": "3c52bc753dba88cc0140462e7f860491"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\table.tsx": {
+    "mtime": 1773082502000.5708,
+    "hash": "2066531279772875cba1f2c269fe23b4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\tabs.tsx": {
+    "mtime": 1777203075403.2898,
+    "hash": "d8b98331924e711dfba02166daf2907d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\textarea.tsx": {
+    "mtime": 1777203075404.295,
+    "hash": "9b15b3767b03333887ae0ef70a02d7ad"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\Toast.tsx": {
+    "mtime": 1777203075390.5493,
+    "hash": "c7b3ee22ff0652cbb1d9477fd7385af4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\toggle-group.tsx": {
+    "mtime": 1773082501965.4988,
+    "hash": "4bc07765706ef9a2e74f97de0fc0ecc0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\toggle.tsx": {
+    "mtime": 1777203075405.6248,
+    "hash": "ba15a732170093b9619b12b2783c53f2"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\Tooltip.tsx": {
+    "mtime": 1777203254926.132,
+    "hash": "82ad0e02cb29fde7d31519a883e82a48"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\TopicFolder.tsx": {
+    "mtime": 1773082501995.5703,
+    "hash": "a6d177dd43cb116dc6204baf15d31639"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\use-mobile.ts": {
+    "mtime": 1773082501999.5686,
+    "hash": "21f0293b823c5298aa735fc013840cff"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\components\\ui\\utils.ts": {
+    "mtime": 1773082501994.5664,
+    "hash": "d9837f38cc05303254571985e3164050"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\config\\firebase.ts": {
+    "mtime": 1777350325885.236,
+    "hash": "06470c2ed08076179e071d9d6b56d891"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\constants\\designSystem.ts": {
+    "mtime": 1773082501816.83,
+    "hash": "d9ac8f639ec2f962eb91e7a67a877aad"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\constants\\index.ts": {
+    "mtime": 1773082501816.83,
+    "hash": "78987e248af21cd356db246fcbd8882c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\contexts\\AuthContext.tsx": {
+    "mtime": 1778100970416.1082,
+    "hash": "2465fcd998c01acd9848eab2519a8d27"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\contexts\\ThemeContext.tsx": {
+    "mtime": 1779103922523.1626,
+    "hash": "1ac405428f3284164517857f131d7b4e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\contexts\\ThemeContextClean.tsx": {
+    "mtime": 1778102893734.3784,
+    "hash": "c69e32051d64fc9c6dcde158657c88cf"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\data\\dashboardMocks.ts": {
+    "mtime": 1777203075406.6245,
+    "hash": "2f5fa40ca2a5fa3089ed3a9afb735c18"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\data\\mockData.ts": {
+    "mtime": 1773082501829.3174,
+    "hash": "c1a1eba945c8645776f370563b8d53d3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\data\\mockDb.ts": {
+    "mtime": 1773082501830.3157,
+    "hash": "f6a5a6de5184d95aafe0fde6ba4d8933"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\hooks\\use-mobile.tsx": {
+    "mtime": 1773082501774.3147,
+    "hash": "d284cc9825e7ab30fbb85b2f576392f5"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\hooks\\use-toast.tsx": {
+    "mtime": 1773082501775.3162,
+    "hash": "1e766fa7f8a4ad33de72d0981af5e381"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\hooks\\useDashboard.ts": {
+    "mtime": 1777203606047.315,
+    "hash": "92eb20efc0e626b7c2ad9937b9f8892e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\hooks\\useScrollSpy.ts": {
+    "mtime": 1777983742913.0923,
+    "hash": "693cfb27faff819653f1f7a36a71af2e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\hooks\\useServiceWorker.ts": {
+    "mtime": 1773082501814.8284,
+    "hash": "13c0e4c1e1a4e243568c6b4d6a6d75af"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\hooks\\useSocket.ts": {
+    "mtime": 1773082501813.8215,
+    "hash": "a9972a8821715a8f00b61e5fdf8d73fb"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\hooks\\useUrlFilters.ts": {
+    "mtime": 1777983742605.377,
+    "hash": "ac2e461b137652dc2b92cc764a2ae4a6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\AuthPage.tsx": {
+    "mtime": 1777984701915.7898,
+    "hash": "5e4ab3787d1e16aa3e619d7b47dded1b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\BrowseSkills.tsx": {
+    "mtime": 1779181242936.5369,
+    "hash": "7b0b0b81faeb2669085d4205962176e3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\CreateSession.tsx": {
+    "mtime": 1777346383581.3096,
+    "hash": "a7397f64e21ec88247f4b7d3a9ad906e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\CreateSkill.tsx": {
+    "mtime": 1779183312185.0295,
+    "hash": "372ef7bec6613c99d98fbc340f2563d8"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\Dashboard.tsx": {
+    "mtime": 1779182722071.5833,
+    "hash": "ee8ff0129daaeb5f67837f9c30c9d855"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\DashboardPage.tsx": {
+    "mtime": 1779181304162.6409,
+    "hash": "04105f00a0a102739352f378f2e17d4e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\Exchanges.tsx": {
+    "mtime": 1779182680342.6213,
+    "hash": "b179b7969794f698ec6e0f4eb8a2983d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\Home.tsx": {
+    "mtime": 1779182647217.7173,
+    "hash": "3abf719132cabec3d0ccaaeee7146724"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\LandingPage.tsx": {
+    "mtime": 1779113363317.324,
+    "hash": "1cd3571555374675cbff07fcc82a8b28"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\Messages.tsx": {
+    "mtime": 1778100673554.827,
+    "hash": "93ba50a01675c6394e4422c2360733c2"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\OnboardingPage.tsx": {
+    "mtime": 1777322971616.9363,
+    "hash": "98846c29a6f185bb4cbbca12fcbfff62"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\Profile.tsx": {
+    "mtime": 1777354534499.6729,
+    "hash": "e181dc141f7f129299f3ee8182b00651"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\ProfilePage.tsx": {
+    "mtime": 1777989180966.2756,
+    "hash": "838e9d9586588d7350a32a409ce23ea9"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\RequestsPage.tsx": {
+    "mtime": 1777989310396.6323,
+    "hash": "905316ad9587bd6ca6e9f2aa202ca33d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\Schedule.tsx": {
+    "mtime": 1779182778177.7974,
+    "hash": "17c73bacea777fa3f48d2e6f86834ae4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\settings\\LanguageSection.tsx": {
+    "mtime": 1777339800006.0984,
+    "hash": "1847c9e6cb23d8348990f330851e43d7"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\settings\\NotificationsSection.tsx": {
+    "mtime": 1777339714420.8516,
+    "hash": "9b6c14a1a7b1a6046410f7622139c992"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\settings\\PrivacySection.tsx": {
+    "mtime": 1777339728297.0051,
+    "hash": "0dad56f04adb7e117c7a485cf7d462d4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\settings\\ProfileSection.tsx": {
+    "mtime": 1778100109896.7249,
+    "hash": "1abc8430cbce16586e5aac202d78a817"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\settings\\SecuritySection.tsx": {
+    "mtime": 1777339691950.119,
+    "hash": "a6394aaafc7519b3fb0ddc2f51ec288e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\Settings.tsx": {
+    "mtime": 1777338424432.6653,
+    "hash": "2914a2e9285d300d47b2ed7d2e0a207e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\SettingsPage.tsx": {
+    "mtime": 1777322823034.7588,
+    "hash": "61ed72697a89b7f1ca8fcc12bd3abbf2"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\pages\\SkillDetail.tsx": {
+    "mtime": 1779182925662.448,
+    "hash": "95e9f4fbc66d316aa9a930ec970ac7cb"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\providers\\QueryProvider.tsx": {
+    "mtime": 1773082501810.4473,
+    "hash": "d8dd782954caf0b83c37632b19799aee"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\routes-new.tsx": {
+    "mtime": 1777203075409.6685,
+    "hash": "380a6c11fe7297f7e32d4272f6a5e847"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\routes.tsx": {
+    "mtime": 1778105385293.198,
+    "hash": "63273486982a02f0c2d5fbc3c9291625"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\utils\\storage.ts": {
+    "mtime": 1773082501812.4482,
+    "hash": "feffe2ccfa5e6447e50fa6510f5f2cfe"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\app\\utils\\webgl.ts": {
+    "mtime": 1773082501811.4473,
+    "hash": "91c842d5dce805fd95a21659b4f553c8"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\chat\\chatApi.ts": {
+    "mtime": 1778100980980.6787,
+    "hash": "e6b86dcee7ec27df72162c3bd899fdbf"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\chat\\chatSocketHandler.ts": {
+    "mtime": 1777355487045.518,
+    "hash": "4af2d1d594636076c176cf21593300c4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\chat\\chatStore.ts": {
+    "mtime": 1777355449125.1865,
+    "hash": "73c1d1f3fb23ef6e72dec44ce92f6f4b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\application\\date-picker\\calendar.tsx": {
+    "mtime": 1778101636379.1895,
+    "hash": "03dc69e67ef9d8b2c2eeda46a970e41a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\application\\date-picker\\cell.tsx": {
+    "mtime": 1778101636474.339,
+    "hash": "25ca3f9dda1da2ca191824cfac65f876"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\application\\date-picker\\date-picker.tsx": {
+    "mtime": 1778101636316.9697,
+    "hash": "773f034dcccac4f9920a462cf2822651"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\application\\date-picker\\date-range-picker.tsx": {
+    "mtime": 1778101636428.2546,
+    "hash": "ed1d9329f485c044d8768b65d498b8d7"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\application\\date-picker\\range-calendar.tsx": {
+    "mtime": 1778101636464.3179,
+    "hash": "211ee635980b092e29cce8ffa128a586"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\avatar-label-group.tsx": {
+    "mtime": 1777988510054.7073,
+    "hash": "a1de1296e9fe8ee6db23a0c8c85ad95d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\avatar-profile-photo.tsx": {
+    "mtime": 1777988510077.9966,
+    "hash": "d7b4edd70e3bdc32d96d949cc924a6fb"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\avatar.tsx": {
+    "mtime": 1777988510024.212,
+    "hash": "6f45faa6b6e45c3cb27de18f7d5ce25a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\base-components\\avatar-add-button.tsx": {
+    "mtime": 1777988510102.3125,
+    "hash": "8f728a77569f93037a795c706db3fe94"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\base-components\\avatar-company-icon.tsx": {
+    "mtime": 1777988510095.2566,
+    "hash": "4f24939dc98f768abbe17b20e16f3995"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\base-components\\avatar-count.tsx": {
+    "mtime": 1777988510047.1084,
+    "hash": "eb7735a6ed5da34b443ffe8cefded3cd"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\base-components\\avatar-online-indicator.tsx": {
+    "mtime": 1777988510090.1028,
+    "hash": "056439e66523598f3ea22fa0c68b7f99"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\base-components\\index.tsx": {
+    "mtime": 1777988510041.562,
+    "hash": "0f4d45b20239d8e3afb1fc4609c63bbe"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\base-components\\verified-tick.tsx": {
+    "mtime": 1777988510084.5647,
+    "hash": "dc1edde5e1c4fea186bf81e8b5f7c57d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\index.ts": {
+    "mtime": 1777989336216.0513,
+    "hash": "acda1620e7dd9112c283813bb72bdbd0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\avatar\\utils.ts": {
+    "mtime": 1777988510060.8438,
+    "hash": "702cbbe4f5a519f1f4cbae76b8a1566b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\buttons\\button.tsx": {
+    "mtime": 1778101636355.919,
+    "hash": "cb10d0d823c586717089088a4ca349e5"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\input\\hint-text.tsx": {
+    "mtime": 1778101636518.411,
+    "hash": "9361b1b301268693c31e301ddfae735e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\input\\input-date.tsx": {
+    "mtime": 1778101636505.6438,
+    "hash": "a2fd93e8f90ee7c51118e87c006cef4b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\input\\label.tsx": {
+    "mtime": 1778101636525.4956,
+    "hash": "18063d5e1701a94e845b13ddea999cc8"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\base\\tooltip\\tooltip.tsx": {
+    "mtime": 1777988510116.0427,
+    "hash": "1b9346f70fd178361f46306615e819a3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\avatar.tsx": {
+    "mtime": 1777203097273.92,
+    "hash": "1c7c5c27fc0bb6662c33581fe40e1ae2"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\background-paths.tsx": {
+    "mtime": 1773082501798.308,
+    "hash": "019b7789e8793d5f4a226f0b563db8c6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\beams-background.tsx": {
+    "mtime": 1773082501799.3147,
+    "hash": "b50aeaba55154a4a0c12f247e01c21bc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\button.tsx": {
+    "mtime": 1777203097274.923,
+    "hash": "70518056548226942981a10af1f4b43d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\Calendar.tsx": {
+    "mtime": 1778101919766.9746,
+    "hash": "90051536695ec2e1e98a47509f9081d1"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\DatePicker.tsx": {
+    "mtime": 1778104668098.9602,
+    "hash": "95a71c2ad1b11feb842817a3501e14b6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1777323246321.0122,
+    "hash": "38f54e37b41e6cd50de76b7132a74f07"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\input.tsx": {
+    "mtime": 1777203097275.9233,
+    "hash": "8c7dec065c0ee4087e0a1f928b277452"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\popover.tsx": {
+    "mtime": 1777203097275.9233,
+    "hash": "48204374dca52c2d99be9c967ece412f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\components\\ui\\ThemeSwitcher.tsx": {
+    "mtime": 1778932916896.5918,
+    "hash": "6a3482525bf833c41bc330566622cb68"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\contexts\\SocketContext.tsx": {
+    "mtime": 1777349886164.098,
+    "hash": "8d06e6aec3e581a0a154ed959b687f2f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\contexts\\ThemeContext.tsx": {
+    "mtime": 1779113047219.2478,
+    "hash": "1036bc9df2f1b6ade556ca047530aff0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\hooks\\use-breakpoint.ts": {
+    "mtime": 1778101636510.8806,
+    "hash": "a9abcd0093ad6fef48dfb921bbb1763f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\layouts\\auth-layout.tsx": {
+    "mtime": 1777331798382.1345,
+    "hash": "d91f4464161ea77a0e9c92dce2fdea89"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\layouts\\dashboard-layout.tsx": {
+    "mtime": 1777203075422.6316,
+    "hash": "393a85d67a9a4a3be4d4568f7814c483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\layouts\\main-layout.tsx": {
+    "mtime": 1777203075424.6978,
+    "hash": "c6b72c3ed929bf4818e8f68d1f701a8a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\lib\\utils\\cx.ts": {
+    "mtime": 1777988510034.546,
+    "hash": "23c6cbafe222e228c855a4375c5b7fe0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\lib\\utils\\is-react-component.ts": {
+    "mtime": 1778101636482.0142,
+    "hash": "4f34092c8a061dc4802cf3b52e7f4cba"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\lib\\utils.ts": {
+    "mtime": 1777988836534.112,
+    "hash": "1bd848900d6d775f3d35f4c4807e8ed6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\main.tsx": {
+    "mtime": 1777343034187.2498,
+    "hash": "3e01177ed2fd6e8ae37a59f26f369722"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\src\\pages\\settings-page.tsx": {
+    "mtime": 1777203075429.775,
+    "hash": "2efa6ed3d43f67f5f97ac693a1a9cbad"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\vite.config.ts": {
+    "mtime": 1777203097275.9233,
+    "hash": "ef98b2d69e6d289c7d11b3524ac98213"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\jest.config.js": {
+    "mtime": 1772881199976.9795,
+    "hash": "d5b85e384b00e3fe22a1138d31a7ff5e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma\\migrations\\20260208191647_init\\migration.sql": {
+    "mtime": 1770578207666.597,
+    "hash": "7eaa07c8ab2d293b26fbd00c4f89f643"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma\\migrations\\20260217191842_add_gamification\\migration.sql": {
+    "mtime": 1771355922164.4995,
+    "hash": "e9e8e4be706103acd2f87365561ca29e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma\\migrations\\20260306125810_add_domain_integrity\\migration.sql": {
+    "mtime": 1772866216138.391,
+    "hash": "df1254000ec4f6096723c1284424eec9"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma\\migrations\\20260426101506_add_firebase_auth\\migration.sql": {
+    "mtime": 1777198506390.892,
+    "hash": "342c72d87344fc51444a1decaaea1999"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma\\migrations\\20260428062522_add_exchange_model\\migration.sql": {
+    "mtime": 1777357649024.9426,
+    "hash": "86be31914f376e54c7c7d48d89e7c4d9"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma\\migrations\\add_indexes_manual.sql": {
+    "mtime": 1772865463231.7056,
+    "hash": "b7a8e7a7247ae3e5fcce3fac4c03170c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma\\seed.ts": {
+    "mtime": 1777357325495.2878,
+    "hash": "a9751284e0db0bab16562e6580a45cbd"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\prisma.config.ts": {
+    "mtime": 1770578241448.741,
+    "hash": "57a8740b20e0838857f7b88b48c1da51"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\config\\firebase.ts": {
+    "mtime": 1777198429016.4536,
+    "hash": "d6c7a70369dd29a4f3e3134da0efa541"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\authController.ts": {
+    "mtime": 1777349349058.8582,
+    "hash": "f71a78b3b5601901d9559e612e27a8dc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\exchangesController.ts": {
+    "mtime": 1777357854504.1477,
+    "hash": "1df628c696331b556c0ed6f82f592592"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\gamificationController.ts": {
+    "mtime": 1777349923755.3906,
+    "hash": "323ebb361695558300eca0a193850250"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\matchesController.ts": {
+    "mtime": 1777354825713.945,
+    "hash": "41f3841a186ec6d097a0330f63202328"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\messagesController.ts": {
+    "mtime": 1772881839296.3438,
+    "hash": "fa9e36becadd391475148a24da6acf61"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\notificationsController.ts": {
+    "mtime": 1772808807633.4016,
+    "hash": "d444c1d3cbfc7803479034b835a14b4f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\ratingsController.ts": {
+    "mtime": 1772863653615.2334,
+    "hash": "aa2f5ae0ca654ea132fe2758a8dda0a1"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\requestsController.ts": {
+    "mtime": 1777357819286.5532,
+    "hash": "88b7864c58618e94d90b02b03772d556"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\sessionController.ts": {
+    "mtime": 1777346286244.9968,
+    "hash": "eb472e1909c791dac15102288cbf0bd3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\skillsController.ts": {
+    "mtime": 1777354876991.2527,
+    "hash": "47184849b00ea66c1c959f1c40a5e205"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\controllers\\userController.ts": {
+    "mtime": 1772861400446.544,
+    "hash": "ecde3518af0019f49d340e5a4b3b5a9e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\middleware\\auth.ts": {
+    "mtime": 1777343849331.3347,
+    "hash": "94f3612d4f2ab7b9d3769f79059aab53"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\middleware\\firebaseAuth.ts": {
+    "mtime": 1777354736543.166,
+    "hash": "f5c76a71291da9e1d1e7620aa2ac0f01"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\middleware\\upload.ts": {
+    "mtime": 1771033997030.0442,
+    "hash": "e85479788998003a16807dacbcb43b2d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\auth.ts": {
+    "mtime": 1777349319880.3022,
+    "hash": "1ada5cbb3259c7bd13a2ce6772fd44e3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\exchanges.ts": {
+    "mtime": 1777357870921.4963,
+    "hash": "3685012f2fed2f97c36d172280058dee"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\gamification.ts": {
+    "mtime": 1777349054016.983,
+    "hash": "60252de637a28954977cbfcd294b1f07"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\matches.ts": {
+    "mtime": 1777348056795.9927,
+    "hash": "fa1e5fad0215eb4622c2ce8bb9eba8aa"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\messages.ts": {
+    "mtime": 1777349081559.0288,
+    "hash": "04bd04f550caa42e796f81351ab74eb5"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\notifications.ts": {
+    "mtime": 1777349065193.277,
+    "hash": "e9d541f5604d6bde98006f8d322b9456"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\ratings.ts": {
+    "mtime": 1777349069386.163,
+    "hash": "dd3fc828e7a1f5e177eb09e18760dd99"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\requests.ts": {
+    "mtime": 1777357935991.922,
+    "hash": "e89c11fe9cbc78309b1bf0739450e529"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\sessions.ts": {
+    "mtime": 1777347965296.4312,
+    "hash": "d701461a5d8720ef98f26dfa6100a65a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\skills.ts": {
+    "mtime": 1777353164608.6982,
+    "hash": "700d2f30186e3b87c70a0b0fa12511a0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\routes\\users.ts": {
+    "mtime": 1777353209980.7778,
+    "hash": "4373b658e1dfb9dbe9d84249ebf6dc5f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\server.ts": {
+    "mtime": 1777374540656.306,
+    "hash": "3c0b011fce75a7b5fd21f3f64522e32b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\services\\achievementService.ts": {
+    "mtime": 1772809387848.7412,
+    "hash": "6fc0b84930c75322732362956edd9811"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\services\\notificationService.ts": {
+    "mtime": 1772808770382.0847,
+    "hash": "a6f1fbfb77792230b96081d6c4dd3a6f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\services\\userService.ts": {
+    "mtime": 1772802026673.0767,
+    "hash": "ea070cc8b218d342896f2fc91ab4f998"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\socket.ts": {
+    "mtime": 1777355716198.704,
+    "hash": "9b0c626c810471a007affa7179cd118f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\types\\auth.ts": {
+    "mtime": 1771033930011.65,
+    "hash": "efe48c9384c78e087566d192c545cf6c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\utils\\filters.ts": {
+    "mtime": 1772801979247.306,
+    "hash": "a098a19741fcc5f2fe4d8917ab1ebc27"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\src\\utils\\pagination.ts": {
+    "mtime": 1772801964456.2646,
+    "hash": "1874be4ec4beceaa5ed6c7a89ca92123"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\auth.test.ts": {
+    "mtime": 1771034514732.4722,
+    "hash": "2666888b66d8686d95352eed8533b47b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\authorization.test.ts": {
+    "mtime": 1772882023880.0898,
+    "hash": "ad94adf0e01e7e595d162af7aa51d933"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\concurrency.test.ts": {
+    "mtime": 1772882101479.6663,
+    "hash": "6f948652f62b0260d285dc15b7bd598e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\gamification.test.ts": {
+    "mtime": 1772875258622.2358,
+    "hash": "92dcfdad7cb35339c1c7a9dd56ad7080"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\matches.test.ts": {
+    "mtime": 1772882719241.2273,
+    "hash": "1a71c78209f66a09dfc72b4e43a13292"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\messages.test.ts": {
+    "mtime": 1772882660473.51,
+    "hash": "21de298cd839ca8b771b6c269f5a8427"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\middleware.test.ts": {
+    "mtime": 1770583326436.266,
+    "hash": "dec667a9a419d55d0c789c80034a5536"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\ratings.test.ts": {
+    "mtime": 1772881924909.9548,
+    "hash": "46f9ca39cf4d767250c4afd56646bd81"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\requests.test.ts": {
+    "mtime": 1770584146548.9292,
+    "hash": "b45e4480f73405cec03bf23393dc6922"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\softDelete.test.ts": {
+    "mtime": 1772882073441.7056,
+    "hash": "c10fa9386766af33dbf7aa0db6ebee84"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\integration\\user.test.ts": {
+    "mtime": 1772875035147.8738,
+    "hash": "a58019ad7f1c50027219a86df6eee7d7"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\setup.ts": {
+    "mtime": 1770341511712.553,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\unit\\matchingAlgorithm.test.ts": {
+    "mtime": 1770585005939.4932,
+    "hash": "1cc6697c23275e8f5bec907868328240"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\utils.ts": {
+    "mtime": 1772881871684.3665,
+    "hash": "9311aae6d8f2bef3ee67c203fec54d64"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\start-backend.js": {
+    "mtime": 1773082552571.9004,
+    "hash": "3a2e450897cfdc9efb0d322ff9648969"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\DEPENDENCIES_ANALYSIS.md": {
+    "mtime": 1777203097261.6624,
+    "hash": "46c856e4aaa5b48a9175d5420bf9615e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\DESIGN_SYSTEM.md": {
+    "mtime": 1777203075380.0105,
+    "hash": "66eebd0e278ee12514e17072bd54d61e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\index.html": {
+    "mtime": 1777986058647.5754,
+    "hash": "164ed7560f5ea09ee15bc6639f3d5bb8"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\OPTIMIZATION_REPORT.md": {
+    "mtime": 1778098303938.8943,
+    "hash": "d52a261d963ac5c69c77e6dd4478cc24"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\playwright-report\\index.html": {
+    "mtime": 1777350181538.2183,
+    "hash": "2c2782b21b4f90f39241ee8359853a73"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\public\\robots.txt": {
+    "mtime": 1773082502019.943,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-chromium\\error-context.md": {
+    "mtime": 1779113984982.2676,
+    "hash": "e1b7658e30c040907190123c1bd80756"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-firefox\\error-context.md": {
+    "mtime": 1779114069837.9844,
+    "hash": "ab09fe49be6334c4cfc8e1a3c756ef3b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114248218.205,
+    "hash": "5db205623988a47e32ae0c28e9339eaf"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114333442.98,
+    "hash": "4ec6649ed3b42ac7319c74a2bf7f8171"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-webkit\\error-context.md": {
+    "mtime": 1779114164470.4368,
+    "hash": "c0403a4df61cebaa2bf029eb12639844"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-chromium\\error-context.md": {
+    "mtime": 1779113985004.531,
+    "hash": "7e73b7ae3d034b965a830ef5bc78d80b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-firefox\\error-context.md": {
+    "mtime": 1779114059357.0176,
+    "hash": "618b10b1754afd4f2f66b44b06d0362c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114248125.977,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114331246.4888,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-webkit\\error-context.md": {
+    "mtime": 1779114163874.7632,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-sign-up-firefox\\error-context.md": {
+    "mtime": 1779114057037.1545,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-chromium\\error-context.md": {
+    "mtime": 1779113984995.5059,
+    "hash": "62e66bc5e1f69b4126483fc12403c3bc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-firefox\\error-context.md": {
+    "mtime": 1779114083748.01,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114252198.6897,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114335228.5735,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-webkit\\error-context.md": {
+    "mtime": 1779114172878.0093,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-chromium\\error-context.md": {
+    "mtime": 1779114017821.2583,
+    "hash": "3b27456ab0dd4ef34acc7f462d1b0b03"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-firefox\\error-context.md": {
+    "mtime": 1779114094909.7356,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114281088.5222,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114363786.192,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-webkit\\error-context.md": {
+    "mtime": 1779114196681.6946,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-chromium\\error-context.md": {
+    "mtime": 1779113984998.3086,
+    "hash": "46c0a67a16978ca2ffcda2603ba43d19"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-firefox\\error-context.md": {
+    "mtime": 1779114074374.955,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114249994.5806,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114337381.009,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-webkit\\error-context.md": {
+    "mtime": 1779114164061.819,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-chromium\\error-context.md": {
+    "mtime": 1779113993077.7373,
+    "hash": "477bc107922cc3d98f839eb2b2a569f3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-firefox\\error-context.md": {
+    "mtime": 1779114093981.4465,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114271216.3733,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114352624.6653,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-webkit\\error-context.md": {
+    "mtime": 1779114186703.9695,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-chromium\\error-context.md": {
+    "mtime": 1779113989640.619,
+    "hash": "90e9cb66445a3ad7503894e6ace80d7b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-firefox\\error-context.md": {
+    "mtime": 1779114084504.8777,
+    "hash": "618b10b1754afd4f2f66b44b06d0362c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114262615.834,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114346562.38,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-webkit\\error-context.md": {
+    "mtime": 1779114179657.322,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-chromium\\error-context.md": {
+    "mtime": 1779114003432.7612,
+    "hash": "8d1ac388ba270607c6d0837ef3a2082c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-firefox\\error-context.md": {
+    "mtime": 1779114104053.4065,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114265405.8323,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114351371.179,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-webkit\\error-context.md": {
+    "mtime": 1779114183012.3486,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-chromium\\error-context.md": {
+    "mtime": 1779114022773.2803,
+    "hash": "c77f2efb78a1ef05849ca099f3cc66cd"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-firefox\\error-context.md": {
+    "mtime": 1779114118637.761,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114295659.3064,
+    "hash": "fb9f5bc1f972755d2c1ca61736ac8b1a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114379663.709,
+    "hash": "d7eb540ba1f048460ecb29d5a0cc0999"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-webkit\\error-context.md": {
+    "mtime": 1779114212167.982,
+    "hash": "ec8c2c3e13d263903b82993e2bf4c3d3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-chromium\\error-context.md": {
+    "mtime": 1779114025811.093,
+    "hash": "6953422c9960d5e80a0d77fbfac90e0f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-firefox\\error-context.md": {
+    "mtime": 1779114128331.0369,
+    "hash": "fc77ea25c0d97f945a8c44b82a7e2cd6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114298571.646,
+    "hash": "fb9f5bc1f972755d2c1ca61736ac8b1a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114384301.5195,
+    "hash": "46707103e4175fb8472db1daa85b9fd5"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-webkit\\error-context.md": {
+    "mtime": 1779114215418.399,
+    "hash": "ec8c2c3e13d263903b82993e2bf4c3d3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-chromium\\error-context.md": {
+    "mtime": 1779114003759.236,
+    "hash": "0d39dc643a92894ffaa6e2d60377ca93"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-firefox\\error-context.md": {
+    "mtime": 1779114110650.7556,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114267859.843,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114355399.8735,
+    "hash": "d6e61193b2fc57ea742c247167eec14e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-webkit\\error-context.md": {
+    "mtime": 1779114182629.3528,
+    "hash": "c99a4a3f7ecdabbb677f0c2f0e872ca3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-chromium\\error-context.md": {
+    "mtime": 1779114018117.1902,
+    "hash": "f1fa394444b8b56b8fc8ed2d883eaf0e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-firefox\\error-context.md": {
+    "mtime": 1779114117935.0847,
+    "hash": "fc77ea25c0d97f945a8c44b82a7e2cd6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114286206.7893,
+    "hash": "fb9f5bc1f972755d2c1ca61736ac8b1a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114371306.9214,
+    "hash": "d7eb540ba1f048460ecb29d5a0cc0999"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-webkit\\error-context.md": {
+    "mtime": 1779114205577.5103,
+    "hash": "ec8c2c3e13d263903b82993e2bf4c3d3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-chromium\\error-context.md": {
+    "mtime": 1779114050474.9402,
+    "hash": "eba2fede8ab92dab408c3f9f7d1dda07"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-firefox\\error-context.md": {
+    "mtime": 1779114146194.1462,
+    "hash": "54573e84ff2ef25c1de5fcc65bd07f12"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114314006.4268,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114396872.736,
+    "hash": "d06b99d88ac61eccfcce87d8d3de168b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-webkit\\error-context.md": {
+    "mtime": 1779114229288.7554,
+    "hash": "5ef8e3601e6631ee94228d279818cbe0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-chromium\\error-context.md": {
+    "mtime": 1779114036441.4739,
+    "hash": "253603c44508e0e8be0f18e45f62db63"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-firefox\\error-context.md": {
+    "mtime": 1779114139091.123,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114304210.7803,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114388230.3867,
+    "hash": "b6817eb3d40927658d3451102be0da11"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-webkit\\error-context.md": {
+    "mtime": 1779114219455.6465,
+    "hash": "5ef8e3601e6631ee94228d279818cbe0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-chromium\\error-context.md": {
+    "mtime": 1779114036033.059,
+    "hash": "d47cbcdd520f1405861d2ad4d1dc1d40"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-firefox\\error-context.md": {
+    "mtime": 1779114129440.1462,
+    "hash": "54573e84ff2ef25c1de5fcc65bd07f12"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114300618.7705,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114386128.792,
+    "hash": "245d5c0ab26be89288baf75b4c9d914c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-webkit\\error-context.md": {
+    "mtime": 1779114215665.8225,
+    "hash": "5ef8e3601e6631ee94228d279818cbe0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-chromium\\error-context.md": {
+    "mtime": 1779114050580.168,
+    "hash": "eba2fede8ab92dab408c3f9f7d1dda07"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-firefox\\error-context.md": {
+    "mtime": 1779114152356.9038,
+    "hash": "499667e186069ada36b34efe6b8c323a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-Mobile-Chrome\\error-context.md": {
+    "mtime": 1779114319369.6938,
+    "hash": "8d8f689e5009ed5828aa24502b44586f"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-Mobile-Safari\\error-context.md": {
+    "mtime": 1779114404494.23,
+    "hash": "1316f0a00ea4c7ac0231eb321197f3b3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-webkit\\error-context.md": {
+    "mtime": 1779114238262.264,
+    "hash": "5ef8e3601e6631ee94228d279818cbe0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\UI_UX_ANALYSIS_REPORT.md": {
+    "mtime": 1778098896715.7058,
+    "hash": "cb34a46cac024e04959ae52e9178983d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\README.md": {
+    "mtime": 1770339062087.0837,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\tests\\README.md": {
+    "mtime": 1770340556421.0813,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\skill_swap\\backend\\WHITEBOX_TESTING_PLAN.md": {
+    "mtime": 1772874843355.8352,
+    "hash": "d8b6ad495eb061284faef71a607333cf"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\public\\vite.svg": {
+    "mtime": 1773082502075.3193,
+    "hash": "8e3a10e157f75ada21ab742c022d5430"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-chromium\\test-failed-1.png": {
+    "mtime": 1779113984896.703,
+    "hash": "97e5222db4e48a54248299e8f49523f6"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-firefox\\test-failed-1.png": {
+    "mtime": 1779114069721.1252,
+    "hash": "4e4fd5ae6f996fb8916a2074688b9bfd"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114248134.1436,
+    "hash": "31186e12ebe599620b5dd25fa009a830"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114333327.664,
+    "hash": "b6cc5606aa15dbdb8df345a48e2d15da"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-1dbe4-ror-for-invalid-credentials-webkit\\test-failed-1.png": {
+    "mtime": 1779114164323.2908,
+    "hash": "b7da6d8ea07685946f0bd473f397f49a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-chromium\\test-failed-1.png": {
+    "mtime": 1779113984913.5537,
+    "hash": "5c2374668a9a60853bf1c7de2a49a14a"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-firefox\\test-failed-1.png": {
+    "mtime": 1779114059192.3423,
+    "hash": "046f64d0a19998a5e0b0cbe4addc982c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114248040.5745,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114331180.6824,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-log-in-webkit\\test-failed-1.png": {
+    "mtime": 1779114163667.4841,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\auth-Authentication-should-allow-user-to-sign-up-firefox\\test-failed-1.png": {
+    "mtime": 1779114056882.5337,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-chromium\\test-failed-1.png": {
+    "mtime": 1779113984912.5554,
+    "hash": "53d2d8e4339dae883336f8c50c1e4f2e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-firefox\\test-failed-1.png": {
+    "mtime": 1779114083612.095,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114252064.4302,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114335155.167,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-sh-c8c4e-lay-matches-in-chat-sidebar-webkit\\test-failed-1.png": {
+    "mtime": 1779114172686.1165,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-chromium\\test-failed-1.png": {
+    "mtime": 1779114017736.5195,
+    "hash": "11cbe3c7cecee83e1fe44d86add951d4"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-firefox\\test-failed-1.png": {
+    "mtime": 1779114094627.4358,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114280941.54,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114363687.1902,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-handle-connection-status-webkit\\test-failed-1.png": {
+    "mtime": 1779114196541.6077,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-chromium\\test-failed-1.png": {
+    "mtime": 1779113984915.0654,
+    "hash": "b297904caea6cf362d91a045d07265ab"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-firefox\\test-failed-1.png": {
+    "mtime": 1779114074286.3762,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114249924.5337,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114337279.6045,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-navigate-to-chat-page-webkit\\test-failed-1.png": {
+    "mtime": 1779114163903.3828,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-chromium\\test-failed-1.png": {
+    "mtime": 1779113993010.8384,
+    "hash": "95a0d5cd6a6d45fb92c9171f0a704315"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-firefox\\test-failed-1.png": {
+    "mtime": 1779114093842.9888,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114271130.5847,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114352533.5269,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-online-offline-status-webkit\\test-failed-1.png": {
+    "mtime": 1779114186546.1052,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-chromium\\test-failed-1.png": {
+    "mtime": 1779113989575.1929,
+    "hash": "1963e33b63bb1720a15335c5ca45c439"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-firefox\\test-failed-1.png": {
+    "mtime": 1779114084312.2788,
+    "hash": "046f64d0a19998a5e0b0cbe4addc982c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114262543.728,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114346478.101,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\chat-Chat-Functionality-should-show-typing-indicator-webkit\\test-failed-1.png": {
+    "mtime": 1779114179524.731,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-chromium\\test-failed-1.png": {
+    "mtime": 1779114003351.3596,
+    "hash": "b69f472121fd574ff84e78bf79e38538"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-firefox\\test-failed-1.png": {
+    "mtime": 1779114103897.1868,
+    "hash": "0a5989d8f62356201c02758f6be52329"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114265315.4194,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114351262.5237,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Reques-cecd0-mended-matches-on-dashboard-webkit\\test-failed-1.png": {
+    "mtime": 1779114182869.8374,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-chromium\\test-failed-1.png": {
+    "mtime": 1779114022653.2512,
+    "hash": "b78db29079ffac7510e2975812c5353e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-firefox\\test-failed-1.png": {
+    "mtime": 1779114118475.011,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114295575.334,
+    "hash": "579ad0b02719ece19e6a4db60dfe9c53"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114379452.1067,
+    "hash": "f6183afd780a9a53ed845a9c89b30da1"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-accept-a-match-request-webkit\\test-failed-1.png": {
+    "mtime": 1779114211970.2908,
+    "hash": "05b34c9ce880886d8464d16e7ad95d1d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-chromium\\test-failed-1.png": {
+    "mtime": 1779114025742.368,
+    "hash": "3a07a8dbdded417bccdc0774316f33e5"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-firefox\\test-failed-1.png": {
+    "mtime": 1779114128084.479,
+    "hash": "f4d3a4852a240a8224a0844427d738bc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114298514.743,
+    "hash": "579ad0b02719ece19e6a4db60dfe9c53"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114384178.0774,
+    "hash": "54d0a4f717fe567fd569684cffdc7cff"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-reject-a-match-request-webkit\\test-failed-1.png": {
+    "mtime": 1779114215279.4512,
+    "hash": "05b34c9ce880886d8464d16e7ad95d1d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-chromium\\test-failed-1.png": {
+    "mtime": 1779114003670.8582,
+    "hash": "eef767e305cccc30025e072f510619d7"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-firefox\\test-failed-1.png": {
+    "mtime": 1779114110497.8872,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114267777.8286,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114355311.4878,
+    "hash": "283f349a22f39ee90fd81a31a5148f71"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-send-a-match-request-webkit\\test-failed-1.png": {
+    "mtime": 1779114182496.088,
+    "hash": "9b708a6786041a0fafdf3ab368310ddc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-chromium\\test-failed-1.png": {
+    "mtime": 1779114018037.7107,
+    "hash": "fedead5954cab8522b9654eeaed53f00"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-firefox\\test-failed-1.png": {
+    "mtime": 1779114117660.1665,
+    "hash": "f4d3a4852a240a8224a0844427d738bc"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114286088.6997,
+    "hash": "d21c89e2af112dcbcfeafa878c004f3c"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114371193.431,
+    "hash": "f6183afd780a9a53ed845a9c89b30da1"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\matches-Matches-and-Requests-should-view-incoming-requests-webkit\\test-failed-1.png": {
+    "mtime": 1779114205490.799,
+    "hash": "05b34c9ce880886d8464d16e7ad95d1d"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-chromium\\test-failed-1.png": {
+    "mtime": 1779114050362.3335,
+    "hash": "89762ae1215e90f864c965978aa3cdf3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-firefox\\test-failed-1.png": {
+    "mtime": 1779114146099.5134,
+    "hash": "bb3fd60435547a27f12f9374634f4e9b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114313943.137,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114396653.448,
+    "hash": "6f15469566e374e23237b462cea12852"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-afd7f-remove-a-skill-from-profile-webkit\\test-failed-1.png": {
+    "mtime": 1779114229171.3943,
+    "hash": "10e3d1e650712c86bb8a36a7b2a27c51"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-chromium\\test-failed-1.png": {
+    "mtime": 1779114036330.2551,
+    "hash": "7d5584669fa75c24f00e2c516041e84e"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-firefox\\test-failed-1.png": {
+    "mtime": 1779114138980.6995,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114304133.617,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114388042.5083,
+    "hash": "fddd89686f45b2276685e5ebe59370b3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-add-a-skill-to-profile-webkit\\test-failed-1.png": {
+    "mtime": 1779114219322.6826,
+    "hash": "10e3d1e650712c86bb8a36a7b2a27c51"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-chromium\\test-failed-1.png": {
+    "mtime": 1779114035952.6782,
+    "hash": "23dcf3f28ff270fdb5050600affa691b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-firefox\\test-failed-1.png": {
+    "mtime": 1779114129275.7473,
+    "hash": "bb3fd60435547a27f12f9374634f4e9b"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114300542.4348,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114385919.4058,
+    "hash": "97b59d29de3e4e8fdcc866a267e12706"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-navigate-to-profile-page-webkit\\test-failed-1.png": {
+    "mtime": 1779114215540.4077,
+    "hash": "10e3d1e650712c86bb8a36a7b2a27c51"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-chromium\\test-failed-1.png": {
+    "mtime": 1779114050528.4585,
+    "hash": "89762ae1215e90f864c965978aa3cdf3"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-firefox\\test-failed-1.png": {
+    "mtime": 1779114152207.0225,
+    "hash": "49d721752399a447321368a72c7e2483"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-Mobile-Chrome\\test-failed-1.png": {
+    "mtime": 1779114319285.2249,
+    "hash": "1f4d95f1f165e46d7828ddeaea79f909"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-Mobile-Safari\\test-failed-1.png": {
+    "mtime": 1779114404321.649,
+    "hash": "8492803af63b72c5602c04e153812bb0"
+  },
+  "C:\\Users\\prath\\Documents\\Sem-4\\BackEnd Engg\\Project\\SkillSwapFrontEnd\\test-results\\profile-Profile-Management-should-update-profile-information-webkit\\test-failed-1.png": {
+    "mtime": 1779114238083.8806,
+    "hash": "10e3d1e650712c86bb8a36a7b2a27c51"
+  }
+}
