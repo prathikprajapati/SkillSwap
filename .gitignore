@@ -1,0 +1,71 @@
+# ===== Logs =====
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== Dependencies =====
+node_modules/
+**/node_modules/
+
+# ===== Build output =====
+dist/
+**/dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+coverage/
+
+# ===== Environment variables =====
+.env
+.env.*
+!.env.example
+
+# ===== Backend (skill_swap/backend) =====
+# Prisma generated client
+/src/generated/prisma/
+# Prisma config compiled files
+prisma.config.d.ts
+prisma.config.d.ts.map
+prisma.config.js
+prisma.config.js.map
+# Test compiled files
+tests/**/*.d.ts
+tests/**/*.js
+tests/**/*.map
+# User uploads
+uploads/
+**/uploads/
+
+# ===== Frontend (SkillSwapFrontEnd) =====
+playwright-report/
+test-results/
+build_errors.log
+*.cjs
+
+# ===== Obsidian Vault =====
+SkillSwap Vault/.obsidian/workspace.json
+SkillSwap Vault/.obsidian/workspace-mobile.json
+
+# ===== Tooling =====
+.kilo/
+
+# ===== Editor / OS =====
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ===== Misc =====
+*.local
+.tmp/
+temp/
