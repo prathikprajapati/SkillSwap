@@ -130,7 +130,7 @@ export default function Profile() {
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
-                <h1 className="text-3xl">{profile.name}</h1>
+                <h1 className="text-white text-3xl">{profile.name}</h1>
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
               </div>
               <div className="flex flex-wrap gap-4 text-muted-foreground mb-4">

@@ -26,65 +26,76 @@ export const SocketProvider = ({ children }: { children: React.ReactNode }) => {
   const setConnected = useChatStore((state) => state.setConnected);
 
   useEffect(() => {
-    let cleanup: (() => void) | undefined;
-    
-    if (user) {
-      // Get Firebase ID token for socket auth (backend expects Firebase token)
-      const getFirebaseToken = async () => {
-        const fbUser = auth.currentUser;
-        if (!fbUser) return;
-        
-        try {
-          const idToken = await fbUser.getIdToken();
-          console.log('🔍 Frontend - Firebase ID Token length:', idToken.length);
-          console.log('🔍 Frontend - Firebase ID Token starts with:', idToken.substring(0, 20) + '...');
-          const socket = connectSocket(idToken);
-          
-          if (!socket) {
-            console.error('Failed to create socket connection');
-            setIsConnected(false);
-            setConnected(false);
-            return;
-          }
-          
-          // Update connection state based on socket
-          const updateConnectionState = () => {
-            setIsConnected(socket?.connected || false);
-            setConnected(socket?.connected || false);
-          };
+    // Stabilize connection lifecycle:
+    // - If user is present: connect only once (connectSocket has singleton guard)
+    // - If user is absent: disconnect and reset
+    let cancelled = false;
 
-          socket.on('connect', updateConnectionState);
-          socket.on('disconnect', updateConnectionState);
-          socket.on('connect_error', (error) => {
-            console.error('Socket connection error:', error);
-            setIsConnected(false);
-            setConnected(false);
-          });
-
-          // Initial state
-          updateConnectionState();
-
-          cleanup = () => {
-            socket.off('connect', updateConnectionState);
-            socket.off('disconnect', updateConnectionState);
-            socket.off('connect_error');
-            disconnectSocket();
-          };
-        } catch (error) {
-          console.error('Failed to get Firebase token:', error);
+    const run = async () => {
+      if (!user) {
+        disconnectSocket();
+        if (!cancelled) {
+          setIsConnected(false);
+          setConnected(false);
         }
-      };
-      
-      getFirebaseToken();
-    } else {
-      // Disconnect if user is not authenticated
-      disconnectSocket();
-      setIsConnected(false);
-      setConnected(false);
-    }
-    
+        return;
+      }
+
+      const fbUser = auth.currentUser;
+      if (!fbUser) return;
+
+      try {
+        const idToken = await fbUser.getIdToken();
+
+        const socket = connectSocket(idToken);
+
+        if (!socket) {
+          console.error('Failed to create socket connection');
+          if (!cancelled) {
+            setIsConnected(false);
+            setConnected(false);
+          }
+          return;
+        }
+
+        // Sync initial state
+        if (!cancelled) {
+          setIsConnected(socket.connected);
+          setConnected(socket.connected);
+        }
+
+        // Lightweight listeners (connection state only).
+        // Backend/chat handler already attaches main event listeners once.
+        const handleConnect = () => {
+          setIsConnected(true);
+          setConnected(true);
+        };
+
+        const handleDisconnect = () => {
+          setIsConnected(false);
+          setConnected(false);
+        };
+
+        socket.on('connect', handleConnect);
+        socket.on('disconnect', handleDisconnect);
+
+        return () => {
+          socket.off('connect', handleConnect);
+          socket.off('disconnect', handleDisconnect);
+          // Do NOT call disconnectSocket() here unless user becomes null.
+        };
+      } catch (error) {
+        console.error('Failed to get Firebase token:', error);
+      }
+    };
+
+    const cleanupPromise = run();
+
     return () => {
-      if (cleanup) cleanup();
+      cancelled = true;
+      // Note: disconnectSocket is handled when `user` becomes null.
+      // This prevents connect/disconnect flapping during re-renders.
+      void cleanupPromise;
     };
   }, [user?.id, setConnected]);
 

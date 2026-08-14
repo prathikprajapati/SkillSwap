@@ -262,11 +262,13 @@ export default function Exchanges() {
                     <h3 className="text-xl font-semibold mb-2 leading-tight">
                       {exchange.role === "teacher" ? (
                         <>
-                          You are teaching <span className="text-primary">{exchange.skillName}</span>
+                          You are teaching{" "}
+                          <span className="text-primary">{exchange.skillName || "Skill"}</span>
                         </>
                       ) : (
                         <>
-                          You are learning <span className="text-secondary">{exchange.skillName}</span>
+                          You are learning{" "}
+                          <span className="text-secondary">{exchange.skillName || "Skill"}</span>
                         </>
                       )}
                     </h3>
