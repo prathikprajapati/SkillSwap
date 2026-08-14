@@ -107,37 +107,43 @@ const corsOrigins: string[] =
 // Default CORS origin to use when no origin header is provided
 const defaultCorsOrigin = "http://localhost:5173";
 
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      // Allow all localhost ports in development
-      if (process.env.NODE_ENV === "development" && isLocalhostOrigin(origin)) {
-        callback(null, origin);
-      }
-      // Allow requests with no origin (like mobile apps or curl requests)
-      else if (!origin) {
-        callback(null, true);
-      }
-      // Allow configured CORS origins
-      else if (corsOrigins.includes(origin)) {
-        callback(null, origin);
-      }
-      // Check if origin matches any pattern (for dynamic origins)
-      else if (corsOrigins.some((o) => origin?.startsWith(o.replace(/\/$/, "")) || o === "*")) {
-        callback(null, origin);
-      }
-      // Fallback to first configured origin or default
-      else {
-        callback(null, corsOrigins[0] || defaultCorsOrigin);
-      }
-    },
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    preflightContinue: false,
-    optionsSuccessStatus: 204,
-  }),
-);
+const corsOptions = {
+  origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean | string) => void) => {
+    // Allow all localhost ports in development
+    if (process.env.NODE_ENV === "development" && isLocalhostOrigin(origin)) {
+      callback(null, origin as string);
+      return;
+    }
+
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) {
+      callback(null, true);
+      return;
+    }
+
+    // Allow configured CORS origins
+    if (corsOrigins.includes(origin)) {
+      callback(null, origin);
+      return;
+    }
+
+    // Check if origin matches any pattern (for dynamic origins)
+    if (corsOrigins.some((o) => origin?.startsWith(o.replace(/\/$/, "")) || o === "*")) {
+      callback(null, origin);
+      return;
+    }
+
+    // Fallback to first configured origin or default
+    callback(null, corsOrigins[0] || defaultCorsOrigin);
+  },
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
 
 // Body parsing middleware
 app.use(express.json({ limit: "10mb" }));
@@ -167,9 +173,23 @@ function sanitizeObject(obj: any): void {
   }
 }
 
+// Explicit CORS preflight handling for the hot endpoint used by frontend.
+// This prevents cases where OPTIONS could hit a fallback/404 before CORS headers are applied.
+app.options("/skills/offerings", cors(corsOptions));
+
 // Health check endpoint - must be before authenticated routes
 app.get("/health", (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
+});
+
+// Debug logger for the hot endpoint (helps confirm Origin + method reaching backend)
+app.use("/skills/offerings", (req, res, next) => {
+  const origin = req.headers.origin;
+  // eslint-disable-next-line no-console
+  console.log(
+    `[CORS DEBUG] ${req.method} /skills/offerings origin=${origin ?? "none"}`
+  );
+  next();
 });
 
 // Apply stricter rate limiting to auth routes

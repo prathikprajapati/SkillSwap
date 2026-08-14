@@ -285,7 +285,7 @@ export default function AuthPage() {
           <div className="inline-flex h-12 w-12 rounded-xl bg-primary text-primary-foreground items-center justify-center mb-4">
             <span className="font-bold text-xl">SS</span>
           </div>
-          <h1 className="text-3xl font-bold mb-2">
+          <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-primary via-accent to-accent/80">
             {isSignup ? "Create Account" : "Welcome Back"}
           </h1>
           <p className="text-muted-foreground">

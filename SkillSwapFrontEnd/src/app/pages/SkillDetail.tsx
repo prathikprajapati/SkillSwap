@@ -213,15 +213,15 @@ export default function SkillDetail() {
             <div className="p-6 rounded-xl border bg-card">
               <h2 className="text-2xl mb-4">What You'll Learn</h2>
               <ul className="space-y-3">
-                <li className="flex items-start gap-3">
+                <li className=" text-black flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Fundamentals of {userSkill.skill.name}</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="text-black  flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Best practices and techniques</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="text-black flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Hands-on practice and guidance</span>
                 </li>
@@ -264,7 +264,7 @@ export default function SkillDetail() {
                 <h3 className="mb-4">Instructor</h3>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-xl font-semibold text-primary">
+                    <span className="text-xl font-semibold text-black">
                       {getInitials(userSkill.user.name)}
                     </span>
                   </div>
@@ -272,7 +272,7 @@ export default function SkillDetail() {
                     <div className="flex items-center gap-2">
                       <Link 
                         to={`/profile/${userSkill.user.id}`}
-                        className="bg-gradient-to-r from-primary via-accent to-accent/80 bg-clip-text text-transparentfont-semibold"
+                        className="text-black"
                       >
                         {userSkill.user.name}
                       </Link>

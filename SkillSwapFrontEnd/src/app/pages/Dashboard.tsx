@@ -158,7 +158,7 @@ export default function Dashboard() {
                   {user?.name ? getInitials(user.name) : 'U'}
                 </span>
               </div>
-              <h2 className="text-xl mb-1">{user?.name || 'User'}</h2>
+              <h2 className="text-muted-foreground text-xl mb-1">{user?.name || 'User'}</h2>
               <p className="text-sm text-muted-foreground mb-4">{user?.email || ''}</p>
               
               <div className="flex items-center gap-4 w-full justify-center mb-4 text-sm">
@@ -300,7 +300,7 @@ export default function Dashboard() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-start justify-between mb-1">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <h4 className="font-semibold">{request.sender?.name || 'Unknown'}</h4>
+                          <h4 className="text-white font-semibold">{request.sender?.name || 'Unknown'}</h4>
                           <span className="text-xs px-2 py-0.5 rounded-full bg-surface border border-border text-muted-foreground">
                             New Request
                           </span>

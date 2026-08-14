@@ -8,6 +8,9 @@ let reconnectAttempts = 0;
 const MAX_RECONNECT_ATTEMPTS = 5;
 const RECONNECT_DELAY = 1000; // Start with 1 second
 
+// Prevent duplicate event listeners on the singleton socket instance
+let listenersAttached = false;
+
 // Typing debounce
 let typingTimeout: number | null = null;
 const TYPING_DEBOUNCE_MS = 500;
@@ -22,9 +25,8 @@ export const connectSocket = (token: string) => {
     socket = io(BACKEND_URL, {
       auth: { token },
       transports: ['websocket', 'polling'],
-      reconnection: true,
-      reconnectionDelay: RECONNECT_DELAY,
-      reconnectionAttempts: MAX_RECONNECT_ATTEMPTS,
+      // For stability: no auto-reconnect. We reconnect only when frontend explicitly calls connectSocket().
+      reconnection: false,
       timeout: 10000, // 10 second connection timeout
     });
   } catch (error) {
@@ -32,7 +34,11 @@ export const connectSocket = (token: string) => {
     return null;
   }
 
-  socket.on('connect', () => {
+  // Attach event listeners only once for the singleton socket instance.
+  if (!listenersAttached) {
+    listenersAttached = true;
+
+    socket.on('connect', () => {
     console.log('🔌 Socket connected');
     reconnectAttempts = 0;
     useChatStore.getState().setConnected(true);
@@ -45,118 +51,123 @@ export const connectSocket = (token: string) => {
     }
   });
 
-  socket.on('disconnect', () => {
-    console.log('🔌 Socket disconnected');
-    useChatStore.getState().setConnected(false);
-  });
-
-  socket.on('connect_error', (error) => {
-    console.error('Socket connection error:', error);
-    reconnectAttempts++;
-    
-    if (reconnectAttempts >= MAX_RECONNECT_ATTEMPTS) {
-      console.error('Max reconnection attempts reached');
+    socket.on('disconnect', () => {
+      console.log('🔌 Socket disconnected');
       useChatStore.getState().setConnected(false);
-    }
-  });
-
-  // Handle new messages
-  socket.on('new_message', (message: any) => {
-    const { addMessage } = useChatStore.getState();
-    const formattedMessage: Message = {
-      id: message.id,
-      matchId: message.match_id,
-      senderId: message.sender_id,
-      senderName: message.sender?.name || 'Unknown',
-      senderAvatar: message.sender?.avatar,
-      content: message.content,
-      status: 'sent',
-      createdAt: new Date(message.created_at),
-      isMe: false, // Received messages are never from me
-    };
-    addMessage(formattedMessage);
-  });
-
-  // Handle message sent confirmation (optimistic UI reconciliation)
-  socket.on('message_sent', (data: { messageId: string; tempId: string }) => {
-    const { updateMessage } = useChatStore.getState();
-    // Find the optimistic message and update it with server data
-    // This will be called with the full message data from the store
-    const messages = useChatStore.getState().messages;
-    const optimisticMessage = messages.get(data.tempId);
-    
-    if (optimisticMessage) {
-      updateMessage(data.tempId, {
-        ...optimisticMessage,
-        id: data.messageId,
-        status: 'sent',
-      });
-    }
-  });
-
-  // Handle message delivered confirmation (recipient received it)
-  socket.on('message_delivered', (data: { messageId: string }) => {
-    const { markMessageAsDelivered } = useChatStore.getState();
-    markMessageAsDelivered(data.messageId);
-  });
-
-  // Handle typing indicators
-  socket.on('typing', (data: { userId: string; userName: string; isTyping: boolean }) => {
-    const { currentMatchId, setTyping } = useChatStore.getState();
-    if (currentMatchId) {
-      setTyping(currentMatchId, data.userId, data.userName, data.isTyping);
-    }
-  });
-
-  // Handle message read receipts
-  socket.on('message_read', (data: { matchId: string; readBy: string; lastReadMessageId?: string; count?: number }) => {
-    const { markMessagesAsRead } = useChatStore.getState();
-    markMessagesAsRead(data.matchId, data.lastReadMessageId);
-  });
-
-  // Handle user status (online/offline)
-  socket.on('user_status', (data: { userId: string; isOnline: boolean }) => {
-    const { setOnlineStatus } = useChatStore.getState();
-    setOnlineStatus(data.userId, data.isOnline);
-  });
-
-  // Handle bulk online status update (initial load)
-  socket.on('online_status_list', (data: { matchId: string; userId: string; isOnline: boolean }[]) => {
-    const { setOnlineStatus } = useChatStore.getState();
-    data.forEach((status) => {
-      setOnlineStatus(status.userId, status.isOnline);
     });
-  });
 
-  // Handle sync response (after reconnect)
-  socket.on('sync_response', (data: { matchId: string; messages: any[] }) => {
-    const { setMessages } = useChatStore.getState();
-    const formattedMessages: Message[] = data.messages.map((msg: any) => ({
-      id: msg.id,
-      matchId: msg.match_id,
-      senderId: msg.sender_id,
-      senderName: msg.sender?.name || 'Unknown',
-      senderAvatar: msg.sender?.avatar,
-      content: msg.content,
-      status: msg.is_read ? 'read' : 'sent',
-      createdAt: new Date(msg.created_at),
-      isMe: false, // Will be updated based on current user
-    }));
-    setMessages(data.matchId, formattedMessages);
-  });
+    socket.on('connect_error', (error) => {
+      console.error('Socket connection error:', error);
+      reconnectAttempts++;
+      
+      // With reconnection disabled, this is the final outcome for this connect attempt.
+      if (reconnectAttempts >= MAX_RECONNECT_ATTEMPTS) {
+        console.error('Max connection attempts reached');
+        useChatStore.getState().setConnected(false);
+      }
+    });
 
-  // Handle errors
-  socket.on('error', (error: { message: string }) => {
-    console.error('Socket error:', error.message);
-  });
+    // Handle new messages
+    socket.on('new_message', (message: any) => {
+      const { addMessage } = useChatStore.getState();
+      const formattedMessage: Message = {
+        id: message.id,
+        matchId: message.match_id,
+        senderId: message.sender_id,
+        senderName: message.sender?.name || 'Unknown',
+        senderAvatar: message.sender?.avatar,
+        content: message.content,
+        status: 'sent',
+        createdAt: new Date(message.created_at),
+        isMe: false, // Received messages are never from me
+      };
+      addMessage(formattedMessage);
+    });
+
+    // Handle message sent confirmation (optimistic UI reconciliation)
+    socket.on('message_sent', (data: { messageId: string; tempId: string }) => {
+      const { updateMessage } = useChatStore.getState();
+      // Find the optimistic message and update it with server data
+      // This will be called with the full message data from the store
+      const messages = useChatStore.getState().messages;
+      const optimisticMessage = messages.get(data.tempId);
+      
+      if (optimisticMessage) {
+        updateMessage(data.tempId, {
+          ...optimisticMessage,
+          id: data.messageId,
+          status: 'sent',
+        });
+      }
+    });
+
+    // Handle message delivered confirmation (recipient received it)
+    socket.on('message_delivered', (data: { messageId: string }) => {
+      const { markMessageAsDelivered } = useChatStore.getState();
+      markMessageAsDelivered(data.messageId);
+    });
+
+    // Handle typing indicators
+    socket.on('typing', (data: { userId: string; userName: string; isTyping: boolean }) => {
+      const { currentMatchId, setTyping } = useChatStore.getState();
+      if (currentMatchId) {
+        setTyping(currentMatchId, data.userId, data.userName, data.isTyping);
+      }
+    });
+
+    // Handle message read receipts
+    socket.on('message_read', (data: { matchId: string; readBy: string; lastReadMessageId?: string; count?: number }) => {
+      const { markMessagesAsRead } = useChatStore.getState();
+      markMessagesAsRead(data.matchId, data.lastReadMessageId);
+    });
+
+    // Handle user status (online/offline)
+    socket.on('user_status', (data: { userId: string; isOnline: boolean }) => {
+      const { setOnlineStatus } = useChatStore.getState();
+      setOnlineStatus(data.userId, data.isOnline);
+    });
+
+    // Handle bulk online status update (initial load)
+    socket.on('online_status_list', (data: { matchId: string; userId: string; isOnline: boolean }[]) => {
+      const { setOnlineStatus } = useChatStore.getState();
+      data.forEach((status) => {
+        setOnlineStatus(status.userId, status.isOnline);
+      });
+    });
+
+    // Handle sync response (after reconnect)
+    socket.on('sync_response', (data: { matchId: string; messages: any[] }) => {
+      const { setMessages } = useChatStore.getState();
+      const formattedMessages: Message[] = data.messages.map((msg: any) => ({
+        id: msg.id,
+        matchId: msg.match_id,
+        senderId: msg.sender_id,
+        senderName: msg.sender?.name || 'Unknown',
+        senderAvatar: msg.sender?.avatar,
+        content: msg.content,
+        status: msg.is_read ? 'read' : 'sent',
+        createdAt: new Date(msg.created_at),
+        isMe: false, // Will be updated based on current user
+      }));
+      setMessages(data.matchId, formattedMessages);
+    });
+
+    // Handle errors
+    socket.on('error', (error: { message: string }) => {
+      console.error('Socket error:', error.message);
+    });
+  }
 
   return socket;
 };
 
 export const disconnectSocket = () => {
   if (socket) {
+    // Remove any listeners to prevent duplication on the next explicit connection.
+    socket.removeAllListeners();
     socket.disconnect();
     socket = null;
+    listenersAttached = false;
     useChatStore.getState().setConnected(false);
   }
 };
