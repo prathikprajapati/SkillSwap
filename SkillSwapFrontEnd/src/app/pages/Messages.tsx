@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Search, Send, MoreVertical, Check, CheckCheck, AlertCircle } from "lucide-react";
 import { useChatStore, type Message } from "../../chat/chatStore";
-import { joinMatch, leaveMatch, sendMessage, sendTyping, markAsRead as markAsReadSocket } from "../../chat/chatSocketHandler";
-import { getConversations, getMessages, markAsRead as markAsReadApi } from "../../chat/chatApi";
+import { getConversations, getMessages, markAsRead as markAsReadApi, sendMessageApi, sendTypingApi } from "../../chat/chatApi";
 import { useAuth } from "../contexts/AuthContext";
+import { useChatRealtime } from "@/hooks/useChatRealtime";
 import { Avatar } from "@/components/base/avatar/avatar";
 import MessageSkeleton from "@/app/components/ui/MessageSkeleton";
 import MeetingModal from "@/app/components/ui/MeetingModal";
@@ -22,6 +22,7 @@ export default function Messages() {
     setConversations,
     setMessages,
     addMessage,
+    updateMessage,
     markMessageAsFailed,
     markMessagesAsRead,
     resetUnreadCount,
@@ -52,12 +53,10 @@ export default function Messages() {
           }));
           setMessages(selectedChatId, messagesWithIsMe);
           setCurrentMatchId(selectedChatId);
-          joinMatch(selectedChatId);
-          
+
           // Mark messages as read and reset unread count
           const lastMessage = messagesWithIsMe[messagesWithIsMe.length - 1];
           if (lastMessage && !lastMessage.isMe) {
-            markAsReadSocket(selectedChatId, lastMessage.id);
             markAsReadApi(selectedChatId, lastMessage.id);
           }
           // Always reset unread count when opening chat
@@ -65,21 +64,27 @@ export default function Messages() {
         })
         .catch((error) => console.error("Failed to load messages:", error));
     }
-
-    return () => {
-      if (selectedChatId) {
-        leaveMatch(selectedChatId);
-      }
-    };
   }, [selectedChatId, setMessages, setCurrentMatchId, markMessagesAsRead, resetUnreadCount, user]);
 
-  // Handle typing indicator
+  // Realtime (Instagram-style HTTP long-polling): new messages, read
+  // receipts (double tick), typing indicators and presence.
+  useChatRealtime(currentMatchId, user?.id ?? null, Boolean(currentMatchId && user));
+
+  // Typing indicator (REST, debounced)
   useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
     if (currentMatchId && messageText.trim()) {
-      sendTyping(currentMatchId, true);
+      timer = setTimeout(() => {
+        sendTypingApi(currentMatchId, true);
+      }, 500);
     } else if (currentMatchId) {
-      sendTyping(currentMatchId, false);
+      sendTypingApi(currentMatchId, false);
     }
+
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
   }, [messageText, currentMatchId]);
 
   const handleSendMessage = (e: React.FormEvent) => {
@@ -115,13 +120,19 @@ export default function Messages() {
     addMessage(optimisticMessage);
     setMessageText("");
 
-    // Send via socket (non-blocking)
-    try {
-      sendMessage(currentMatchId, trimmedContent, tempId);
-    } catch (error) {
-      console.error("Failed to send message:", error);
-      markMessageAsFailed(tempId);
-    }
+    // Send via REST (optimistic UI reconciled with the server response)
+    sendMessageApi(currentMatchId, trimmedContent)
+      .then((serverMessage) => {
+        updateMessage(tempId, {
+          ...optimisticMessage,
+          id: serverMessage.id,
+          status: "sent",
+        });
+      })
+      .catch((error) => {
+        console.error("Failed to send message:", error);
+        markMessageAsFailed(tempId);
+      });
   };
 
   const selectedConversation = conversations.find(c => c.matchId === selectedChatId);

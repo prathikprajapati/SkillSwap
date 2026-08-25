@@ -10,6 +10,8 @@ const api = axios.create({
   },
 });
 
+export { api as chatApi };
+
 // Add Firebase auth token to requests
 api.interceptors.request.use(async (config) => {
   const { auth } = await import('../app/config/firebase');
@@ -107,22 +109,51 @@ export const getMessages = async (matchId: string, cursor?: string, limit = 20):
   }
 };
 
-// Batch mark messages as read
+// Batch mark messages as read (up to lastReadMessageId)
 export const markAsRead = async (matchId: string, messageId?: string): Promise<void> => {
   try {
-    await api.put(`/messages/${messageId}/read`, { matchId });
+    if (messageId) {
+      await api.put('/messages/read', { matchId, lastReadMessageId: messageId });
+    } else {
+      await api.put('/messages/read', { matchId });
+    }
   } catch (error) {
     console.error('Error marking messages as read:', error);
     throw error;
   }
 };
 
-// Send message via REST API (fallback when socket is not available)
-export const sendMessageApi = async (matchId: string, content: string): Promise<void> => {
+// Send message via REST API (the Instagram-model transport: actions are plain HTTP)
+export const sendMessageApi = async (matchId: string, content: string): Promise<any> => {
   try {
-    await api.post('/messages', { match_id: matchId, content });
+    const response = await api.post('/messages', { match_id: matchId, content });
+    return response.data;
   } catch (error) {
     console.error('Error sending message:', error);
     throw error;
   }
+};
+
+// Typing indicator (REST, debounced client-side; auto-expires server-side after 3s)
+export const sendTypingApi = async (matchId: string, isTyping: boolean): Promise<void> => {
+  try {
+    await api.post('/realtime/typing', { matchId, isTyping });
+  } catch (error) {
+    console.error('Error sending typing indicator:', error);
+    throw error;
+  }
+};
+
+// Long-poll for realtime updates (Instagram-style HTTP transport)
+export const pollForUpdates = async (
+  matchId: string,
+  after: string,
+  signal?: AbortSignal,
+): Promise<{ events: any[]; online: boolean }> => {
+  const response = await api.get('/realtime/poll', {
+    params: { matchId, after },
+    signal,
+    timeout: 30000, // slightly above the server's 25s hold
+  });
+  return response.data as { events: any[]; online: boolean };
 };

@@ -473,7 +473,7 @@
     min-height: 44px;
     min-width: 44px;
 
-    @apply px-6 py-2.5 bg-primary text-white;
+    @apply px-6 py-2.5 bg-primary text-primary-foreground;
     @apply ring-primary;
 
     &:hover {

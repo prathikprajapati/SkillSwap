@@ -23,7 +23,17 @@ router.post('/',
   sendMessage
 );
 
-// PUT /messages/:id/read - Mark message as read
+// PUT /messages/read - Batch mark messages as read (up to lastReadMessageId)
+router.put('/read',
+  [
+    body('matchId').isUUID(),
+    body('lastReadMessageId').optional().isUUID(),
+    body('messageId').optional().isUUID()
+  ],
+  markMessageAsRead
+);
+
+// PUT /messages/:id/read - Mark message as read (legacy single-message mode)
 router.put('/:id/read',
   [param('id').isUUID()],
   markMessageAsRead

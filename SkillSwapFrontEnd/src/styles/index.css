@@ -2,5 +2,13 @@
 @import './tailwind.css';
 @import './theme.css';
 @import './design-theme.css';
+@import './themes.css';
 
 /* Tailwind v3 fallback: focus-visible: is not recognized in this config */
+
+/* Global keyboard focus indicator (WCAG 2.4.7 / 2.4.11).
+   Uses --text-primary so the outline contrasts with both light and dark themes. */
+:focus-visible {
+  outline: 3px solid var(--text-primary);
+  outline-offset: 2px;
+}

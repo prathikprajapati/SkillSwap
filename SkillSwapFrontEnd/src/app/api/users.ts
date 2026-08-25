@@ -5,6 +5,7 @@ export interface UserProfile {
   email: string;
   name: string;
   avatar?: string;
+  bio?: string;
   profile_completion: number;
   offeredSkills: UserSkill[];
   wantedSkills: UserSkill[];

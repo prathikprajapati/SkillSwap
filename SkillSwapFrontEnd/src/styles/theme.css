@@ -455,7 +455,7 @@
   */
 
   html {
-    font-size: var(--font-size);
+    font-size: var(--font-size-base, 16px);
   }
 
   h1 {

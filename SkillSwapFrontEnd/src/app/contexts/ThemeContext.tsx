@@ -1,10 +1,7 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 
 export type ThemeName = 'electric-coral' | 'deep-sapphire' | 'modern-violet';
-export type ThemeVariant = 'dark';
-
-// Universal theme locking: variant is always dark.
-// ThemeName may remain, but the app always applies the "-dark" theme.
+export type ThemeVariant = 'light' | 'dark';
 
 interface ThemeColors {
   '--background': string;
@@ -42,23 +39,25 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     const savedThemeName = localStorage.getItem('skillswap-theme-name') as ThemeName;
     const savedThemeVariant = localStorage.getItem('skillswap-theme-variant') as ThemeVariant;
 
-    // Always force dark variant
-    setThemeVariant('dark');
-
     if (savedThemeName) setThemeName(savedThemeName);
-    if (savedThemeVariant) setThemeVariant('dark');
+    if (savedThemeVariant === 'light' || savedThemeVariant === 'dark') {
+      setThemeVariant(savedThemeVariant);
+    }
   }, []);
 
   useEffect(() => {
     if (!isMounted) return;
 
-    // Lock to a single universal dark claymorphism theme.
-    const themeString = `${themeName}-dark`;
+    // Apply the selected theme: e.g. "electric-coral-dark"
+    const themeString = `${themeName}-${themeVariant}`;
     document.documentElement.setAttribute('data-theme', themeString);
 
+    // Enable theme transitions once the theme is applied (themes.css gates on this class)
+    document.body.classList.add('theme-loaded');
+
     localStorage.setItem('skillswap-theme-name', themeName);
-    localStorage.setItem('skillswap-theme-variant', 'dark');
-  }, [themeName, isMounted]);
+    localStorage.setItem('skillswap-theme-variant', themeVariant);
+  }, [themeName, themeVariant, isMounted]);
 
   const value: ThemeContextType = {
     themeName,

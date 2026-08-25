@@ -15,8 +15,7 @@ import ratingsRoutes from "./routes/ratings";
 import notificationsRoutes from "./routes/notifications";
 import sessionsRoutes from "./routes/sessions";
 import exchangesRoutes from "./routes/exchanges";
-
-import { initializeSocket } from "./socket";
+import realtimeRoutes from "./routes/realtime";
 
 dotenv.config();
 
@@ -48,7 +47,9 @@ app.use(
   }),
 );
 
-// Security: Rate limiting
+// Apply rate limiting to all routes.
+// Long-poll requests are exempt in development (a client polls every ~25s
+// and would otherwise be throttled by the global 100/15min window).
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 100, // Limit each IP to 100 requests per windowMs
@@ -57,6 +58,11 @@ const limiter = rateLimit({
   },
   standardHeaders: true,
   legacyHeaders: false,
+  skip: (req) =>
+    process.env.NODE_ENV === "development" &&
+    req.path.startsWith("/realtime") &&
+    (req.ip === "127.0.0.1" || req.ip === "::1" ||
+     req.hostname === "localhost" || req.hostname === "127.0.0.1"),
 });
 
 // Apply rate limiting to all routes
@@ -199,6 +205,7 @@ app.use("/gamification", gamificationRoutes);
 app.use("/ratings", ratingsRoutes);
 app.use("/notifications", notificationsRoutes);
 app.use("/exchanges", exchangesRoutes);
+app.use("/realtime", realtimeRoutes);
 
 // Security: HTTPS enforcement for production
 if (process.env.NODE_ENV === "production") {
@@ -242,9 +249,6 @@ app.use(
   },
 );
 
-// Initialize WebSocket server
-const io = initializeSocket(httpServer);
-
 // Start server only if not in test mode or if explicitly requested
 // This prevents port conflicts during testing
 const isTestEnvironment = process.env.NODE_ENV === "test";
@@ -258,9 +262,9 @@ if (shouldStartServer) {
     console.log(
       `🔒 Security: Helmet, Rate Limiting, Input Sanitization enabled`,
     );
-    console.log(`🔌 WebSocket: Socket.io initialized`);
+    console.log(`📡 Realtime: HTTP long-polling enabled (/realtime/poll)`);
   });
 }
 
 export default app;
-export { httpServer, io };
+export { httpServer };

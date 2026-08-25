@@ -11,7 +11,7 @@ interface ProfileData {
 }
 
 export function ProfileSection() {
-  const { user, updateProfile } = useAuth();
+  const { user } = useAuth();
   const [selectedAvatar, setSelectedAvatar] = useState(user?.avatar || getInitials(user?.name || ""));
   const [isSaving, setIsSaving] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
@@ -31,6 +31,12 @@ export function ProfileSection() {
     }
     return (parts[0].charAt(0) + parts[parts.length - 1].charAt(0)).toUpperCase();
   }
+
+  // An avatar can be a photo URL (e.g. Firebase/Google profile picture) or a
+  // short label (initials/emoji). Render an <img> only for real images.
+  const isImageAvatar = (value: string): boolean =>
+    /^(https?:\/\/|data:image\/|\/images\/|\/uploads\/)/i.test(value) ||
+    value.startsWith("blob:");
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -113,9 +119,17 @@ export function ProfileSection() {
       
       <div className="flex flex-col gap-6 pb-6 border-b border-border">
         <div className="flex items-center gap-6">
-          <div className="h-20 w-20 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl font-bold">
-            {selectedAvatar}
-          </div>
+          {isImageAvatar(selectedAvatar) ? (
+            <img
+              src={selectedAvatar}
+              alt="Profile avatar"
+              className="h-20 w-20 rounded-full object-cover bg-primary/10"
+            />
+          ) : (
+            <div className="h-20 w-20 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl font-bold">
+              {selectedAvatar}
+            </div>
+          )}
           <div>
             <label className="btn-secondary py-2 px-4 mb-2 text-sm inline-flex items-center gap-2 cursor-pointer">
               <Upload className="h-4 w-4 flex-shrink-0" />

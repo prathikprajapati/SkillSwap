@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from "react-router";
 import { Menu, X, Search, MessageSquare, User, Grid, Home, PlusCircle, Moon, Sun, BookOpen } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "@/app/contexts/ThemeContext";
 import { useChatStore } from "@/chat/chatStore";
 import { FocusTrap } from "@/app/components/ui/FocusTrap";
@@ -90,15 +90,20 @@ function RootContent() {
 
             {/* Desktop Actions */}
             <div className="hidden md:flex items-center gap-3">
-              <button className="p-2 rounded-md hover:bg-accent transition-colors flex items-center justify-center">
+              <button className="p-2 rounded-md hover:bg-accent transition-colors flex items-center justify-center" aria-label="Search skills">
                 <Search className="h-5 w-5 text-muted-foreground flex-shrink-0" />
               </button>
               {mounted && (
                 <button
                   className="p-2 rounded-md hover:bg-accent transition-colors flex items-center justify-center"
-                  onClick={() => { /* locked to universal dark theme */ }}
+                  onClick={() => setThemeVariant(themeVariant === 'light' ? 'dark' : 'light')}
+                  aria-label={themeVariant === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
                 >
-                  <Sun className="h-5 w-5 text-muted-foreground flex-shrink-0" />
+                  {themeVariant === 'light' ? (
+                    <Moon className="h-5 w-5 text-muted-foreground flex-shrink-0" />
+                  ) : (
+                    <Sun className="h-5 w-5 text-muted-foreground flex-shrink-0" />
+                  )}
                 </button>
               )}
               <Link
@@ -111,6 +116,7 @@ function RootContent() {
               <Link
                 to="/messages"
                 className="p-2 rounded-md hover:bg-accent transition-colors relative flex items-center justify-center"
+                aria-label={`Messages${totalUnread > 0 ? `, ${totalUnread} unread` : ""}`}
               >
                 <MessageSquare className="h-5 w-5 text-muted-foreground flex-shrink-0" />
                 {totalUnread > 0 && (
@@ -122,6 +128,7 @@ function RootContent() {
               <Link
                 to="/dashboard"
                 className="p-2 rounded-md hover:bg-accent transition-colors flex items-center justify-center"
+                aria-label="Your profile"
               >
                 <User className="h-5 w-5 text-muted-foreground flex-shrink-0" />
               </Link>

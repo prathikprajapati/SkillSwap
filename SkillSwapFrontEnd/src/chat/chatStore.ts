@@ -43,7 +43,8 @@ interface ChatState {
   updateMessage: (tempId: string, serverMessage: Message) => void;
   markMessageAsFailed: (tempId: string) => void;
   markMessageAsDelivered: (messageId: string) => void;
-  markMessagesAsRead: (matchId: string, lastReadMessageId?: string) => void;
+  markMessagesAsRead: (matchId: string, lastReadMessageId?: string, readUpTo?: string) => void;
+  markMyMessagesAsRead: (matchId: string, readUpTo?: string) => void;
   setCurrentMatchId: (matchId: string | null) => void;
   setTyping: (matchId: string, userId: string, userName: string, isTyping: boolean) => void;
   setOnlineStatus: (userId: string, isOnline: boolean) => void;
@@ -148,26 +149,46 @@ export const useChatStore = create<ChatState>((set, get) => ({
     }
   },
 
-  // Mark messages as read
-  markMessagesAsRead: (matchId, lastReadMessageId) => {
+  // Mark messages as read (others' messages, e.g. when I open the chat or
+  // my other device reads them). readUpTo is a server-provided timestamp so
+  // this works even when the reference message is not in the local store.
+  markMessagesAsRead: (matchId, lastReadMessageId, readUpTo) => {
     const { messages } = get();
     const newMessages = new Map(messages);
-    
+    const readUpToDate = readUpTo ? new Date(readUpTo) : null;
+
     for (const [key, msg] of newMessages) {
-      if (msg.matchId === matchId && !msg.isMe && msg.status !== 'read') {
-        if (lastReadMessageId) {
-          // In batch mode, mark all messages up to lastReadMessageId
-          const lastMessage = newMessages.get(lastReadMessageId);
-          if (lastMessage && msg.createdAt <= lastMessage.createdAt) {
-            newMessages.set(key, { ...msg, status: 'read' });
-          }
-        } else {
-          // Mark all unread messages as read
+      if (msg.matchId !== matchId || msg.isMe || msg.status === 'read') continue;
+      if (readUpToDate) {
+        if (msg.createdAt.getTime() <= readUpToDate.getTime()) {
           newMessages.set(key, { ...msg, status: 'read' });
         }
+      } else if (lastReadMessageId) {
+        const lastMessage = newMessages.get(lastReadMessageId);
+        if (lastMessage && msg.createdAt <= lastMessage.createdAt) {
+          newMessages.set(key, { ...msg, status: 'read' });
+        }
+      } else {
+        newMessages.set(key, { ...msg, status: 'read' });
       }
     }
-    
+
+    set({ messages: newMessages });
+  },
+
+  // Mark MY OWN sent messages as read (the blue double-tick). Triggered when
+  // the recipient's read receipt arrives with a readUpTo timestamp.
+  markMyMessagesAsRead: (matchId, readUpTo) => {
+    const { messages } = get();
+    const newMessages = new Map(messages);
+    const readUpToDate = readUpTo ? new Date(readUpTo) : null;
+
+    for (const [key, msg] of newMessages) {
+      if (msg.matchId !== matchId || !msg.isMe || msg.status === 'read') continue;
+      if (readUpToDate && msg.createdAt.getTime() > readUpToDate.getTime()) continue;
+      newMessages.set(key, { ...msg, status: 'read' });
+    }
+
     set({ messages: newMessages });
   },
 

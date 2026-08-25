@@ -29,7 +29,7 @@
     "noUncheckedSideEffectImports": true,
     /* Path mapping */
     "baseUrl": ".",
-    "ignoreDeprecations": "6.0",
+    "ignoreDeprecations": "5.0",
     "paths": {
       "@/*": [
         "./src/*"

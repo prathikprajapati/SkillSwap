@@ -21,11 +21,6 @@
   --theme-name: "electric-coral";
   --theme-variant: "light";
   
-  /* Shared Design Tokens */
-  --font-display: 'Inter', 'SF Pro Display', -apple-system, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  
   /* Spacing System - 8px Grid */
   --space-1: 4px;
   --space-2: 8px;
@@ -101,7 +96,7 @@
   --primary: #FF6B6B;
   --primary-light: #FF8787;
   --primary-dark: #E55555;
-  --primary-foreground: #FFFFFF;
+  --primary-foreground: #1A1A1A;
   
   /* Complementary Deep Blue - 10% Accent */
   --accent: #1E40AF;
@@ -112,7 +107,8 @@
   --text-primary: #1A1A1A;
   --text-secondary: #4A4A4C;
   --text-tertiary: #6E7681;
-  --text-muted: #9CA3AF;
+  --text-muted: #6B7280;
+  --muted-foreground: var(--text-tertiary);
   
   /* Border & UI Elements */
   --border: #E5E5E7;
@@ -171,8 +167,9 @@
   /* Text Colors - High Contrast on Dark */
   --text-primary: #FAFAFA;
   --text-secondary: #A3A3A3;
-  --text-tertiary: #737373;
-  --text-muted: #525252;
+  --text-tertiary: #9CA3AF;
+  --text-muted: #9096A0;
+  --muted-foreground: var(--text-tertiary);
   
   /* Border & UI Elements */
   --border: #262626;
@@ -231,7 +228,8 @@
   --text-primary: #1A1A1A;
   --text-secondary: #4A4A4C;
   --text-tertiary: #6E7681;
-  --text-muted: #9CA3AF;
+  --text-muted: #6B7280;
+  --muted-foreground: var(--text-tertiary);
   
   /* Border & UI Elements */
   --border: #E5E5E7;
@@ -280,7 +278,7 @@
   --primary: #2E529B; /* Slightly lighter for visibility */
   --primary-light: #3E62A8;
   --primary-dark: #1E3A8A;
-  --primary-foreground: #0F1419;
+  --primary-foreground: #FFFFFF;
   
   /* Sophisticated Gold Accents - 10% Accent */
   --accent: #FFD700;
@@ -290,8 +288,9 @@
   /* Text Colors - High Contrast on Dark */
   --text-primary: #FAFAFA;
   --text-secondary: #A3A3A3;
-  --text-tertiary: #737373;
-  --text-muted: #525252;
+  --text-tertiary: #9CA3AF;
+  --text-muted: #9096A0;
+  --muted-foreground: var(--text-tertiary);
   
   /* Border & UI Elements */
   --border: #262626;
@@ -350,7 +349,8 @@
   --text-primary: #1A1A1A;
   --text-secondary: #4A4A4C;
   --text-tertiary: #6E7681;
-  --text-muted: #9CA3AF;
+  --text-muted: #6B7280;
+  --muted-foreground: var(--text-tertiary);
   
   /* Border & UI Elements */
   --border: #E5E5E7;
@@ -398,7 +398,7 @@
   /* Modern Violet Palette - 30% Secondary */
   --primary: #9B5BF7; /* Brighter for dark mode */
   --primary-light: #B57BFF;
-  --primary-dark: #7C3AED;
+  --primary-dark: #8B5CF6; /* Keeps >= 4.5:1 with the dark foreground on hover */
   --primary-foreground: #0A0A0F;
   
   /* Vibrant Sunset Orange - 10% Accent */
@@ -409,8 +409,9 @@
   /* Text Colors - High Contrast on Dark */
   --text-primary: #FAFAFA;
   --text-secondary: #A3A3A3;
-  --text-tertiary: #737373;
-  --text-muted: #525252;
+  --text-tertiary: #9CA3AF;
+  --text-muted: #9096A0;
+  --muted-foreground: var(--text-tertiary);
   
   /* Border & UI Elements */
   --border: #262626;
@@ -449,6 +450,7 @@
   --color-background: var(--background);
   --color-surface: var(--surface);
   --color-surface-elevated: var(--surface-elevated);
+  --color-elevated: var(--surface-elevated);
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
   --color-primary-dark: var(--primary-dark);
@@ -456,6 +458,7 @@
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-foreground: var(--accent-foreground);
+  --color-tertiary: var(--accent-light);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
