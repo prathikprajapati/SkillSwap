@@ -1,14 +1,14 @@
 import admin from 'firebase-admin';
+import path from 'path';
 
-const firebaseConfig = {
-  projectId: process.env.FIREBASE_PROJECT_ID || 'mock-project-id',
-  privateKey: (process.env.FIREBASE_PRIVATE_KEY || 'mock-key').replace(/\\n/g, '\n'),
-  clientEmail: process.env.FIREBASE_CLIENT_EMAIL || 'mock@email.com',
-};
+const serviceAccount = require(path.join(
+  process.cwd(),
+  'firebase-service-account.json'
+));
 
 if (!admin.apps.length) {
   admin.initializeApp({
-    credential: admin.credential.cert(firebaseConfig),
+    credential: admin.credential.cert(serviceAccount),
   });
 }
 

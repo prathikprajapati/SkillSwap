@@ -1,3 +1,26 @@
+# Secrets / credentials
+skill_swap/backend/firebase-service-account.json
+*.json.key
+*.service-account.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
 # ===== Logs =====
 logs
 *.log

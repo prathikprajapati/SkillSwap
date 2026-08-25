@@ -15,11 +15,23 @@ import ratingsRoutes from "./routes/ratings";
 import notificationsRoutes from "./routes/notifications";
 import sessionsRoutes from "./routes/sessions";
 import exchangesRoutes from "./routes/exchanges";
+<<<<<<< HEAD
 import realtimeRoutes from "./routes/realtime";
+=======
+import cors from "cors";
+
+import { initializeSocket } from "./socket";
+>>>>>>> 844bb7da421b4c6ca4255308eb28889b3ac4081e
 
 dotenv.config();
 
 const app = express();
+app.use(
+  cors({
+    origin: ["http://localhost:5174", "http://localhost:5173"],
+    credentials: true,
+  })
+);
 const httpServer = createServer(app);
 const PORT = process.env.PORT || 3000;
 
